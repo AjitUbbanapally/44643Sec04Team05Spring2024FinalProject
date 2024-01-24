@@ -32,9 +32,17 @@ Legal Case Management System - One stop solution with all Workflows and process 
   
 ### Roles and Responsibilities
 
-1. Ajit Ubbanapally – Team Leader, Full stack developer,Responsible for designing the Application workflow ,Coordinating with the entire team,Documentation
-2. Sunnith Reddy Kondam – Full stack developer, Business Process Analyst and responsible for Customizing User Interface and Deployment.
-3. Akshay Kumar Gupta Attuluru – Full Stack developer and responsible for database design requirements, Documentation.
-4. Nanne Hussain Shaik – Full Stack Developer and responsible for Integration Activities, Testing.
+1. Ajit Ubbanapally – Team Leader, Full Stack developer
+   - Responsible for designing the Application workflow
+   - Coordinating with the Entire team and Documentation
+2. Sunnith Reddy Kondam – Full Stack developer, Business Process Analyst
+   - Responsible for Customizing User Interface
+   -  Manage the Deployment phase
+3. Akshay Kumar Gupta Attuluru – Full Stack developer
+   -  Responsible for database design requirements
+   -  Documentation
+4. Nanne Hussain Shaik – Full Stack Developer
+   -  responsible for Integration Activities
+   -  Performing Unit Testing
 
 
