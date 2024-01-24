@@ -1,6 +1,6 @@
 ## 44643Sec04Team05Spring2024FinalProject
 # Legal Case Management System - One stop solution with all Workflows and process design
-Its an Enterprise Resource Software to manage the entire lifecycle of a Legal cases.
+Its an Enterprise Resource Software to manage the entire lifecycle of Legal cases. 
 
 ## Project Work Breakdown Structure(WBS)
 
