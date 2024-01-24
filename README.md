@@ -1,5 +1,6 @@
-# 44643Sec04Team05Spring2024FinalProject
-Legal Case Management System - One stop solution with all Workflows and process design
+## 44643Sec04Team05Spring2024FinalProject
+# Legal Case Management System - One stop solution with all Workflows and process design
+Its an Enterprise Resource Software to manage the entire lifecycle of a Legal cases.
 
 ## Project Work Breakdown Structure(WBS)
 
@@ -25,9 +26,12 @@ Legal Case Management System - One stop solution with all Workflows and process 
 6. Ongoing Assessment
    - Conduct Unit Testing
    - Continuously adapt to evolving app requirements.
-7. Deployment
+7. Deployment 
     - Execute System Development
     - Monitor Performance
+8. Documentation
+    - Create Technical User Manual
+    - Record Standard Operating Procedures
       
   
 ### Roles and Responsibilities
@@ -42,7 +46,7 @@ Legal Case Management System - One stop solution with all Workflows and process 
    -  Responsible for database design requirements
    -  Documentation
 4. Nanne Hussain Shaik – Full Stack Developer
-   -  responsible for Integration Activities
+   -  Responsible for Integration Activities
    -  Performing Unit Testing
 
 
