@@ -1,7 +1,7 @@
 # 44643Sec04Team05Spring2024FinalProject
 Legal Case Management System - One stop solution with all Workflows and process design
 
-## Project work breakdown structure(WBS)
+## Project Work Breakdown Structure(WBS)
 
 1. Feature Discovery
    - Define Project Scope
