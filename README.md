@@ -52,5 +52,12 @@ Its an Enterprise Resource Software to manage the entire lifecycle of Legal case
 ## User Interface Design configuration
 
  Since its an Enterprise resource planning application, the UI is so designed to cater to the Business needs.
+  The Navigation among different screens
+- There is an initial login screen where the User(Attorney can provide the login information), with additional feature of forgot User name , Password for easy retrieval. There is a component at the bottom of the page, where the  client can provide ones basic details which will help the software compute the profile score. This would form the basis for whether the case would be accepted or not.
+- Buttons pressed
+- Scroll horizontally or vertically.
+- Tap gestures or click on the content.
+
+
 
 
