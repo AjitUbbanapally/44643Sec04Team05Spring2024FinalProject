@@ -48,5 +48,9 @@ Its an Enterprise Resource Software to manage the entire lifecycle of Legal case
 4. Nanne Hussain Shaik – Full Stack Developer
    -  Responsible for Integration Activities
    -  Performing Unit Testing
+  
+## User Interface Design configuration
+
+ Since its an Enterprise resource planning application, the UI is so designed to cater to the Business needs.
 
 
