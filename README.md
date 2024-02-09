@@ -60,6 +60,45 @@ The Navigation among different screens is as follows :
 - When we click on Reports - we get some visualization analysis along with basic reports.
 - In profile Score option,  the  Admin can provide ones basic details which will help the software compute the profile score. This would form the basis for whether the case would be accepted or not.
 
+### UI/Prototype
+![UI](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/632dbdad-99e9-4b6b-94df-1a6ec28aae6e)
+
+### Screen1--LOGIN SCREEN
+
+![Screen1](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/ab831aaa-18e0-4bb4-a926-45a65c588086)
+
+### Screen2 -- DashBoard
+![screen2](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/9d2c9910-817d-463d-a608-d698d463a76d)
+
+### Screen3 -- PARTY/CLIENT INFORMATION SCREEN 
+![screen3](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/915e8c89-662c-4b81-9ad3-c5881d7ac8bb)
+
+### Screen4 -- LIST VIEW BASED ON SPECIFIC MATTER (CASE)
+![screen4](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/a31c41fb-8a43-4d5d-a81a-e7bd0f5d4135)
+
+### Screen5 -- PARTY/CLIENT RELATED BASIC DETAILS
+![screen5](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/901f5f36-4db6-4a90-af2c-0d967dcaf43b)
+
+### Screen 6 -- CLIENTS DETAILED CASE INFORMATION
+![screen6](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/1ff139a1-c65f-45c7-8391-682afb37c214)
+
+### Screen7 --  VISUALIZATION SCREEN
+![Screen7](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/cd9daa26-2331-40a0-93f3-980b9d8eef0f)
+
+### Screen8 -- Check profile check
+![screen8](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/936dce05-5e3f-42e8-8de3-cd3ccf473c92)
+
+
+## User Interface Design configuration
+
+Since its an Enterprise resource planning application, the UI is so designed to cater to the Business needs.
+The Navigation among different screens is as follows :
+- There is an initial login screen where the User(Attorney can provide the login information), with additional feature of forgot User name , Password for easy retrieval.
+- After logging in,  the dashboard page would open up -consisting of Parties, matter, Reports and Profile score.
+- When user clicks on parties - the details of all clients would be showcased in list view. There is an option to search for a particular party. When we click on that party - their basic details would be shown up, which includes name, email, billing information etc. There would be another option called advanced - upon clicking on that the detailed case description view of the client would pop up.
+- When we click on Matter button - all matters belonging to a particular Case type would be shown.
+- When we click on Reports - we get some visualization analysis along with basic reports.
+- In profile Score option,  the  Admin can provide ones basic details which will help the software compute the profile score. This would form the basis for whether the case would be accepted or not.
 
 
 
