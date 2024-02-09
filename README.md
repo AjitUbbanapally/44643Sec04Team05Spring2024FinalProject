@@ -54,7 +54,7 @@ Its an Enterprise Resource Software to manage the entire lifecycle of Legal case
 Since its an Enterprise resource planning application, the UI is so designed to cater to the Business needs.
 The Navigation among different screens is as follows :
 - There is an initial login screen where the User(Attorney can provide the login information), with additional feature of forgot User name , Password for easy retrieval.
-- After logging in,  the dashboard page would open up -consisting of Parties, matter, Reports and Profile score.
+- After logging in,  the dashboard page would open up -consisting of Parties, Matter, Reports and Profile score.
 - When user clicks on parties - the details of all clients would be showcased in list view. There is an option to search for a particular party. When we click on that party - their basic details would be shown up, which includes name, email, billing information etc. There would be another option called advanced - upon clicking on that the detailed case description view of the client would pop up.
 - When we click on Matter button - all matters belonging to a particular Case type would be shown.
 - When we click on Reports - we get some visualization analysis along with basic reports.
