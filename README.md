@@ -75,7 +75,7 @@ The Navigation among different screens is as follows :
 ![screen3](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/915e8c89-662c-4b81-9ad3-c5881d7ac8bb)
 
 ### Screen4 -- LIST VIEW BASED ON SPECIFIC MATTER (CASE)
-![screen4](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/a31c41fb-8a43-4d5d-a81a-e7bd0f5d4135)
+![screen4](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/0fda3a56-32e3-41c3-8c5c-f04f0b3e86f4)
 
 ### Screen5 -- PARTY/CLIENT RELATED BASIC DETAILS
 ![screen5](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/901f5f36-4db6-4a90-af2c-0d967dcaf43b)
