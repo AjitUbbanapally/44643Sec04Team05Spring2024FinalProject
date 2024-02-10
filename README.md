@@ -78,7 +78,7 @@ The Navigation among different screens is as follows :
 ![screen4](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/0fda3a56-32e3-41c3-8c5c-f04f0b3e86f4)
 
 ### Screen5 -- PARTY/CLIENT RELATED BASIC DETAILS
-![screen5](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/901f5f36-4db6-4a90-af2c-0d967dcaf43b)
+![screen5](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/6c55dfed-301c-44f5-8e32-13a4eb149e2c)
 
 ### Screen 6 -- CLIENTS DETAILED CASE INFORMATION
 ![screen6](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/1ff139a1-c65f-45c7-8391-682afb37c214)
