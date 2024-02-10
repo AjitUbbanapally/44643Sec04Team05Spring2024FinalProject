@@ -67,27 +67,77 @@ The Navigation among different screens is as follows :
 
 
 ![Screen1](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/ab831aaa-18e0-4bb4-a926-45a65c588086)
+- Buttons pressed:
+  -	Login button 
+  - Remember me button. 
+  - Forgot password. 
+  - Sign up. 
+
+- This is a login page where we will sign up using credentials and once it signed in, it will display dashboard where there will be different options to select.
+
 
 ### Screen2 -- DashBoard
 ![screen2](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/9d2c9910-817d-463d-a608-d698d463a76d)
 
+- Buttons Pressed:
+  - Parties
+  - Matter
+  - Report
+  - Profile Score
+- Each of 4 buttons - Parties, Matter, Report, and Profile Score will navigate to 4 different screens.
+- This is just a user interface and doesn’t have any other functions involved in it.
+  
 ### Screen3 -- PARTY/CLIENT INFORMATION SCREEN 
 ![screen3](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/915e8c89-662c-4b81-9ad3-c5881d7ac8bb)
+
+- This is screen that is navigated by clicking on parties’ button from screen 2.
+- Buttons Pressed:
+	- LCMS – Directs to home page.
+	- Search button 
+	- Filter Button 
+	- Back/Reset button.
+
+- This screen consists of search button where we can search different cases and filter by using type, case type. It consists of vertical and horizontal scrolling.
+
+
 
 ### Screen4 -- LIST VIEW BASED ON SPECIFIC MATTER (CASE)
 ![screen4](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/0fda3a56-32e3-41c3-8c5c-f04f0b3e86f4)
 
+- Screen is displayed by clicking on matter button from screen 2 . The tabs include  Home tab, matters tab 
+
+- It consists of different case details and matters  belonging to same type (Matter type can be chosen from Matters tab) eg. Intellectual Property. It gives information  whether cases are opened or closed.  
+We can click on Home button to go back to Dashboard screen (screen 2)
+
 ### Screen5 -- PARTY/CLIENT RELATED BASIC DETAILS
 ![screen5](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/6c55dfed-301c-44f5-8e32-13a4eb149e2c)
+- By clicking on each party name from screen 3 it will be navigate towards this page and display the basic details of party or client. We can click on Home button to go back to Dashboard screen (screen 2)
+
 
 ### Screen 6 -- CLIENTS DETAILED CASE INFORMATION
 ![screen6](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/1ff139a1-c65f-45c7-8391-682afb37c214)
 
+- There is an Advanced option , upon clicking on that the detailed case information of client is showcased.
+In landscape and portrait view entire information would be displayed with a provision for horizontal and vertical scrolling.
+
+
+
 ### Screen7 --  VISUALIZATION SCREEN
 ![Screen7](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/cd9daa26-2331-40a0-93f3-980b9d8eef0f)
 
+- When we click on Reports - we get some visualization analysis along with basic reports.
+- There are no buttons. Its just the some statistics related to profile of the user so that he can have track of his cases.
+- It gives information on total Matters/cases taken up and proportion of cases belonging to each case type.
+- Revenue generated
+
+
+
 ### Screen8 --  profile score check
 ![screen8](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/936dce05-5e3f-42e8-8de3-cd3ccf473c92)
+
+- Buttons: 
+  - There will be one “check score” button.
+- There will some sample questionnaire to enter in order to know the profile score. We need to fill in all the details like Age, DOB, Case type, felonies etc and click on “Check Score” button to check the score.  it will compute the score based on the Machine learning analysis.
 
 
 ## User Interface Design configuration
