@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC20B7282B828FFB00152DFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B7272B828FFB00152DFF /* AppDelegate.swift */; };
+		EC20B72A2B828FFB00152DFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B7292B828FFB00152DFF /* SceneDelegate.swift */; };
+		EC20B72C2B828FFB00152DFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B72B2B828FFB00152DFF /* ViewController.swift */; };
+		EC20B72F2B828FFB00152DFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC20B72D2B828FFB00152DFF /* Main.storyboard */; };
+		EC20B7312B828FFE00152DFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC20B7302B828FFE00152DFF /* Assets.xcassets */; };
+		EC20B7342B828FFE00152DFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC20B7322B828FFE00152DFF /* LaunchScreen.storyboard */; };
+		EC20B73F2B828FFE00152DFF /* LegalCaseManagementSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B73E2B828FFE00152DFF /* LegalCaseManagementSystemTests.swift */; };
+		EC20B7492B828FFE00152DFF /* LegalCaseManagementSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B7482B828FFE00152DFF /* LegalCaseManagementSystemUITests.swift */; };
+		EC20B74B2B828FFE00152DFF /* LegalCaseManagementSystemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B74A2B828FFE00152DFF /* LegalCaseManagementSystemUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC20B73B2B828FFE00152DFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC20B71C2B828FFB00152DFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC20B7232B828FFB00152DFF;
+			remoteInfo = LegalCaseManagementSystem;
+		};
+		EC20B7452B828FFE00152DFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC20B71C2B828FFB00152DFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC20B7232B828FFB00152DFF;
+			remoteInfo = LegalCaseManagementSystem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC20B7242B828FFB00152DFF /* LegalCaseManagementSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegalCaseManagementSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC20B7272B828FFB00152DFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC20B7292B828FFB00152DFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EC20B72B2B828FFB00152DFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC20B72E2B828FFB00152DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC20B7302B828FFE00152DFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC20B7332B828FFE00152DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC20B7352B828FFE00152DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC20B73A2B828FFE00152DFF /* LegalCaseManagementSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegalCaseManagementSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC20B73E2B828FFE00152DFF /* LegalCaseManagementSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalCaseManagementSystemTests.swift; sourceTree = "<group>"; };
+		EC20B7442B828FFE00152DFF /* LegalCaseManagementSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegalCaseManagementSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC20B7482B828FFE00152DFF /* LegalCaseManagementSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalCaseManagementSystemUITests.swift; sourceTree = "<group>"; };
+		EC20B74A2B828FFE00152DFF /* LegalCaseManagementSystemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalCaseManagementSystemUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC20B7212B828FFB00152DFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC20B7372B828FFE00152DFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC20B7412B828FFE00152DFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC20B71B2B828FFB00152DFF = {
+			isa = PBXGroup;
+			children = (
+				EC20B7262B828FFB00152DFF /* LegalCaseManagementSystem */,
+				EC20B73D2B828FFE00152DFF /* LegalCaseManagementSystemTests */,
+				EC20B7472B828FFE00152DFF /* LegalCaseManagementSystemUITests */,
+				EC20B7252B828FFB00152DFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC20B7252B828FFB00152DFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC20B7242B828FFB00152DFF /* LegalCaseManagementSystem.app */,
+				EC20B73A2B828FFE00152DFF /* LegalCaseManagementSystemTests.xctest */,
+				EC20B7442B828FFE00152DFF /* LegalCaseManagementSystemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC20B7262B828FFB00152DFF /* LegalCaseManagementSystem */ = {
+			isa = PBXGroup;
+			children = (
+				EC20B7272B828FFB00152DFF /* AppDelegate.swift */,
+				EC20B7292B828FFB00152DFF /* SceneDelegate.swift */,
+				EC20B72B2B828FFB00152DFF /* ViewController.swift */,
+				EC20B72D2B828FFB00152DFF /* Main.storyboard */,
+				EC20B7302B828FFE00152DFF /* Assets.xcassets */,
+				EC20B7322B828FFE00152DFF /* LaunchScreen.storyboard */,
+				EC20B7352B828FFE00152DFF /* Info.plist */,
+			);
+			path = LegalCaseManagementSystem;
+			sourceTree = "<group>";
+		};
+		EC20B73D2B828FFE00152DFF /* LegalCaseManagementSystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC20B73E2B828FFE00152DFF /* LegalCaseManagementSystemTests.swift */,
+			);
+			path = LegalCaseManagementSystemTests;
+			sourceTree = "<group>";
+		};
+		EC20B7472B828FFE00152DFF /* LegalCaseManagementSystemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC20B7482B828FFE00152DFF /* LegalCaseManagementSystemUITests.swift */,
+				EC20B74A2B828FFE00152DFF /* LegalCaseManagementSystemUITestsLaunchTests.swift */,
+			);
+			path = LegalCaseManagementSystemUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC20B7232B828FFB00152DFF /* LegalCaseManagementSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC20B74E2B828FFE00152DFF /* Build configuration list for PBXNativeTarget "LegalCaseManagementSystem" */;
+			buildPhases = (
+				EC20B7202B828FFB00152DFF /* Sources */,
+				EC20B7212B828FFB00152DFF /* Frameworks */,
+				EC20B7222B828FFB00152DFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LegalCaseManagementSystem;
+			productName = LegalCaseManagementSystem;
+			productReference = EC20B7242B828FFB00152DFF /* LegalCaseManagementSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC20B7392B828FFE00152DFF /* LegalCaseManagementSystemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC20B7512B828FFE00152DFF /* Build configuration list for PBXNativeTarget "LegalCaseManagementSystemTests" */;
+			buildPhases = (
+				EC20B7362B828FFE00152DFF /* Sources */,
+				EC20B7372B828FFE00152DFF /* Frameworks */,
+				EC20B7382B828FFE00152DFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC20B73C2B828FFE00152DFF /* PBXTargetDependency */,
+			);
+			name = LegalCaseManagementSystemTests;
+			productName = LegalCaseManagementSystemTests;
+			productReference = EC20B73A2B828FFE00152DFF /* LegalCaseManagementSystemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC20B7432B828FFE00152DFF /* LegalCaseManagementSystemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC20B7542B828FFE00152DFF /* Build configuration list for PBXNativeTarget "LegalCaseManagementSystemUITests" */;
+			buildPhases = (
+				EC20B7402B828FFE00152DFF /* Sources */,
+				EC20B7412B828FFE00152DFF /* Frameworks */,
+				EC20B7422B828FFE00152DFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC20B7462B828FFE00152DFF /* PBXTargetDependency */,
+			);
+			name = LegalCaseManagementSystemUITests;
+			productName = LegalCaseManagementSystemUITests;
+			productReference = EC20B7442B828FFE00152DFF /* LegalCaseManagementSystemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC20B71C2B828FFB00152DFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					EC20B7232B828FFB00152DFF = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					EC20B7392B828FFE00152DFF = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = EC20B7232B828FFB00152DFF;
+					};
+					EC20B7432B828FFE00152DFF = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = EC20B7232B828FFB00152DFF;
+					};
+				};
+			};
+			buildConfigurationList = EC20B71F2B828FFB00152DFF /* Build configuration list for PBXProject "LegalCaseManagementSystem" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC20B71B2B828FFB00152DFF;
+			productRefGroup = EC20B7252B828FFB00152DFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC20B7232B828FFB00152DFF /* LegalCaseManagementSystem */,
+				EC20B7392B828FFE00152DFF /* LegalCaseManagementSystemTests */,
+				EC20B7432B828FFE00152DFF /* LegalCaseManagementSystemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC20B7222B828FFB00152DFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC20B7342B828FFE00152DFF /* LaunchScreen.storyboard in Resources */,
+				EC20B7312B828FFE00152DFF /* Assets.xcassets in Resources */,
+				EC20B72F2B828FFB00152DFF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC20B7382B828FFE00152DFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC20B7422B828FFE00152DFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC20B7202B828FFB00152DFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC20B72C2B828FFB00152DFF /* ViewController.swift in Sources */,
+				EC20B7282B828FFB00152DFF /* AppDelegate.swift in Sources */,
+				EC20B72A2B828FFB00152DFF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC20B7362B828FFE00152DFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC20B73F2B828FFE00152DFF /* LegalCaseManagementSystemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC20B7402B828FFE00152DFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC20B74B2B828FFE00152DFF /* LegalCaseManagementSystemUITestsLaunchTests.swift in Sources */,
+				EC20B7492B828FFE00152DFF /* LegalCaseManagementSystemUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC20B73C2B828FFE00152DFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC20B7232B828FFB00152DFF /* LegalCaseManagementSystem */;
+			targetProxy = EC20B73B2B828FFE00152DFF /* PBXContainerItemProxy */;
+		};
+		EC20B7462B828FFE00152DFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC20B7232B828FFB00152DFF /* LegalCaseManagementSystem */;
+			targetProxy = EC20B7452B828FFE00152DFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC20B72D2B828FFB00152DFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC20B72E2B828FFB00152DFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC20B7322B828FFE00152DFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC20B7332B828FFE00152DFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC20B74C2B828FFE00152DFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC20B74D2B828FFE00152DFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC20B74F2B828FFE00152DFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LegalCaseManagementSystem/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nwmissouri.spring24.cs44643.sec04.LegalCaseManagementSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC20B7502B828FFE00152DFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LegalCaseManagementSystem/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nwmissouri.spring24.cs44643.sec04.LegalCaseManagementSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC20B7522B828FFE00152DFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nwmissouri.spring24.cs44643.sec04.LegalCaseManagementSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegalCaseManagementSystem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LegalCaseManagementSystem";
+			};
+			name = Debug;
+		};
+		EC20B7532B828FFE00152DFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nwmissouri.spring24.cs44643.sec04.LegalCaseManagementSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegalCaseManagementSystem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LegalCaseManagementSystem";
+			};
+			name = Release;
+		};
+		EC20B7552B828FFE00152DFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nwmissouri.spring24.cs44643.sec04.LegalCaseManagementSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LegalCaseManagementSystem;
+			};
+			name = Debug;
+		};
+		EC20B7562B828FFE00152DFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nwmissouri.spring24.cs44643.sec04.LegalCaseManagementSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LegalCaseManagementSystem;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC20B71F2B828FFB00152DFF /* Build configuration list for PBXProject "LegalCaseManagementSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC20B74C2B828FFE00152DFF /* Debug */,
+				EC20B74D2B828FFE00152DFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC20B74E2B828FFE00152DFF /* Build configuration list for PBXNativeTarget "LegalCaseManagementSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC20B74F2B828FFE00152DFF /* Debug */,
+				EC20B7502B828FFE00152DFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC20B7512B828FFE00152DFF /* Build configuration list for PBXNativeTarget "LegalCaseManagementSystemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC20B7522B828FFE00152DFF /* Debug */,
+				EC20B7532B828FFE00152DFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC20B7542B828FFE00152DFF /* Build configuration list for PBXNativeTarget "LegalCaseManagementSystemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC20B7552B828FFE00152DFF /* Debug */,
+				EC20B7562B828FFE00152DFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC20B71C2B828FFB00152DFF /* Project object */;
+}
