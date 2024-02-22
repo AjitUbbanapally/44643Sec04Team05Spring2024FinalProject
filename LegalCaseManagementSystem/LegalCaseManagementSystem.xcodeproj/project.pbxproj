@@ -16,6 +16,7 @@
 		EC20B73F2B828FFE00152DFF /* LegalCaseManagementSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B73E2B828FFE00152DFF /* LegalCaseManagementSystemTests.swift */; };
 		EC20B7492B828FFE00152DFF /* LegalCaseManagementSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B7482B828FFE00152DFF /* LegalCaseManagementSystemUITests.swift */; };
 		EC20B74B2B828FFE00152DFF /* LegalCaseManagementSystemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B74A2B828FFE00152DFF /* LegalCaseManagementSystemUITestsLaunchTests.swift */; };
+		EC71EA822B86E9E3004FC72F /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = EC71EA812B86E9E3004FC72F /* AnimatedGradientView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC71EA822B86E9E3004FC72F /* AnimatedGradientView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = LegalCaseManagementSystem;
+			packageProductDependencies = (
+				EC71EA812B86E9E3004FC72F /* AnimatedGradientView */,
+			);
 			productName = LegalCaseManagementSystem;
 			productReference = EC20B7242B828FFB00152DFF /* LegalCaseManagementSystem.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = EC20B71B2B828FFB00152DFF;
+			packageReferences = (
+				EC71EA802B86E9E3004FC72F /* XCRemoteSwiftPackageReference "AnimatedGradientView" */,
+			);
 			productRefGroup = EC20B7252B828FFB00152DFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -601,6 +609,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC71EA802B86E9E3004FC72F /* XCRemoteSwiftPackageReference "AnimatedGradientView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rwbutler/AnimatedGradientView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC71EA812B86E9E3004FC72F /* AnimatedGradientView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC71EA802B86E9E3004FC72F /* XCRemoteSwiftPackageReference "AnimatedGradientView" */;
+			productName = AnimatedGradientView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC20B71C2B828FFB00152DFF /* Project object */;
 }
