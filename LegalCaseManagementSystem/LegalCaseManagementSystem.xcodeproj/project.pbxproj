@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CEBFFA22B87121100F3AA5B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7CEBFFA12B87121100F3AA5B /* Lottie */; };
+		7CEBFFA42B87125500F3AA5B /* LCMSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEBFFA32B87125500F3AA5B /* LCMSVC.swift */; };
 		EC20B7282B828FFB00152DFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B7272B828FFB00152DFF /* AppDelegate.swift */; };
 		EC20B72A2B828FFB00152DFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B7292B828FFB00152DFF /* SceneDelegate.swift */; };
 		EC20B72C2B828FFB00152DFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B72B2B828FFB00152DFF /* ViewController.swift */; };
@@ -37,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7CEBFFA32B87125500F3AA5B /* LCMSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCMSVC.swift; sourceTree = "<group>"; };
 		EC20B7242B828FFB00152DFF /* LegalCaseManagementSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegalCaseManagementSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC20B7272B828FFB00152DFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC20B7292B828FFB00152DFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC71EA822B86E9E3004FC72F /* AnimatedGradientView in Frameworks */,
+				7CEBFFA22B87121100F3AA5B /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +109,7 @@
 				EC20B7292B828FFB00152DFF /* SceneDelegate.swift */,
 				EC20B72B2B828FFB00152DFF /* ViewController.swift */,
 				EC20B72D2B828FFB00152DFF /* Main.storyboard */,
+				7CEBFFA32B87125500F3AA5B /* LCMSVC.swift */,
 				EC20B7302B828FFE00152DFF /* Assets.xcassets */,
 				EC20B7322B828FFE00152DFF /* LaunchScreen.storyboard */,
 				EC20B7352B828FFE00152DFF /* Info.plist */,
@@ -147,6 +152,7 @@
 			name = LegalCaseManagementSystem;
 			packageProductDependencies = (
 				EC71EA812B86E9E3004FC72F /* AnimatedGradientView */,
+				7CEBFFA12B87121100F3AA5B /* Lottie */,
 			);
 			productName = LegalCaseManagementSystem;
 			productReference = EC20B7242B828FFB00152DFF /* LegalCaseManagementSystem.app */;
@@ -222,6 +228,7 @@
 			mainGroup = EC20B71B2B828FFB00152DFF;
 			packageReferences = (
 				EC71EA802B86E9E3004FC72F /* XCRemoteSwiftPackageReference "AnimatedGradientView" */,
+				7CEBFFA02B87121100F3AA5B /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = EC20B7252B828FFB00152DFF /* Products */;
 			projectDirPath = "";
@@ -269,6 +276,7 @@
 				EC20B72C2B828FFB00152DFF /* ViewController.swift in Sources */,
 				EC20B7282B828FFB00152DFF /* AppDelegate.swift in Sources */,
 				EC20B72A2B828FFB00152DFF /* SceneDelegate.swift in Sources */,
+				7CEBFFA42B87125500F3AA5B /* LCMSVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +619,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7CEBFFA02B87121100F3AA5B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.1;
+			};
+		};
 		EC71EA802B86E9E3004FC72F /* XCRemoteSwiftPackageReference "AnimatedGradientView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/rwbutler/AnimatedGradientView.git";
@@ -622,6 +638,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7CEBFFA12B87121100F3AA5B /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CEBFFA02B87121100F3AA5B /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
 		EC71EA812B86E9E3004FC72F /* AnimatedGradientView */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EC71EA802B86E9E3004FC72F /* XCRemoteSwiftPackageReference "AnimatedGradientView" */;

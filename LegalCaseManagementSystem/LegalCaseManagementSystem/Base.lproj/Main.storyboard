@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LCMSVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LegalCaseManagementSystem" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BYZ-38-t0r" customClass="LCMSVC" customModule="LegalCaseManagementSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="LottieAnimationView" customModule="Lottie">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="zL3-VD-l61" userLabel="BigContainer">
-                                <rect key="frame" x="21" y="80" width="351" height="421"/>
+                                <rect key="frame" x="21" y="79" width="351" height="421"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LCMS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbV-FM-x4b">
                                         <rect key="frame" x="0.0" y="0.0" width="351" height="63.333333333333336"/>
@@ -99,6 +99,10 @@
                                     <constraint firstItem="0gu-X5-iqe" firstAttribute="width" secondItem="zL3-VD-l61" secondAttribute="width" id="om2-At-8kq"/>
                                 </constraints>
                             </stackView>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ou-8V-fSF" userLabel="LaunchLAV" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="555"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -106,11 +110,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zL3-VD-l61" secondAttribute="trailing" constant="20" id="1HN-Kg-ob6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zL3-VD-l61" secondAttribute="bottom" constant="20" id="1gM-da-i4f"/>
                             <constraint firstItem="zL3-VD-l61" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2Yn-V0-gdx"/>
+                            <constraint firstItem="0ou-8V-fSF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8JV-DK-TlT"/>
+                            <constraint firstItem="0ou-8V-fSF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JUQ-qp-b7g"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zL3-VD-l61" secondAttribute="bottom" constant="21" id="N5t-bU-4xT"/>
                             <constraint firstItem="zL3-VD-l61" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="Qyb-E7-whI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zL3-VD-l61" secondAttribute="trailing" constant="21" id="SZt-WC-uLL"/>
+                            <constraint firstItem="0ou-8V-fSF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="fsY-aP-3R7"/>
                             <constraint firstItem="zL3-VD-l61" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="nQO-vk-g1h"/>
                             <constraint firstItem="zL3-VD-l61" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="uVO-CI-Xbm"/>
+                            <constraint firstItem="0ou-8V-fSF" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="vlQ-eV-ZPz"/>
                         </constraints>
                     </view>
                     <connections>
