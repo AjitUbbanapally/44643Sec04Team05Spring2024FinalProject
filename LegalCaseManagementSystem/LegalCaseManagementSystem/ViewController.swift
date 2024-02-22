@@ -23,8 +23,8 @@ class ViewController: UIViewController {
         
         let animatedGradient = AnimatedGradientView(frame: view.bounds)
         animatedGradient.direction = .up
-        animatedGradient.animationValues = [(colors: ["# A3D256", "#A3D256"], .up, .axial),
-                                            (colors: ["#A3D256", "#A3D256", "#A3D256"], .right, .axial),
+        animatedGradient.animationValues = [(colors: ["# A3D256", "#A3D255"], .up, .axial),
+                                            (colors: ["#A3D256", "#A3D255", "#A3D256"], .right, .axial),
                                             (colors: ["#A3D256", "#A3D256"], .down, .axial),
                                             (colors: ["#A3D256", "#A3D256", "#A3D256"], .left, .axial)]
         view.addSubview(animatedGradient)
