@@ -32,6 +32,29 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func loginButtonTapped(_ sender: UIButton) {
+            // Perform login authentication
+            let username = UserNameTF.text ?? ""
+            let password = PasswordTF.text ?? ""
+            
+            if isValidCredentials(username: username, password: password) {
+                // Login successful
+                // Navigate to next view controller or perform necessary action
+                print("Login successful")
+            } else {
+                // Invalid credentials
+                // Show error message or handle appropriately
+                print("Invalid credentials")
+            }
+        }
+        
+        // MARK: - Helper Methods
+        
+        func isValidCredentials(username: String, password: String) -> Bool {
+            
+            return !username.isEmpty && !password.isEmpty
+        }
+    
     
     
 
