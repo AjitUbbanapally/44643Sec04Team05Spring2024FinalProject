@@ -168,14 +168,14 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gAa-uf-reh" userLabel="Dashboardsub1">
                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="349.66666666666669"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Q9h-8W-WLU" userLabel="PartiesSV">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Q9h-8W-WLU" userLabel="PartiesSV">
                                                         <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="349.66666666666669"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parties" translatesAutoresizingMaskIntoConstraints="NO" id="4ds-CP-n8s" userLabel="PartiesImage">
-                                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="341.66666666666669"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Parties" translatesAutoresizingMaskIntoConstraints="NO" id="4ds-CP-n8s" userLabel="PartiesImage">
+                                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="307.33333333333331"/>
                                                             </imageView>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myk-XH-B2u">
-                                                                <rect key="frame" x="0.0" y="349.66666666666663" width="172.66666666666666" height="0.0"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myk-XH-B2u">
+                                                                <rect key="frame" x="0.0" y="315.33333333333331" width="172.66666666666666" height="34.333333333333314"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Parties"/>
                                                             </button>
@@ -231,6 +231,9 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="2Ts-z1-PR7" firstAttribute="height" secondItem="M8D-XS-QVV" secondAttribute="height" multiplier="0.23" id="FtG-2s-hxc"/>
+                                    <constraint firstItem="lmA-TX-XYr" firstAttribute="height" secondItem="M8D-XS-QVV" secondAttribute="height" multiplier="0.23" id="VH2-bW-5uv"/>
+                                    <constraint firstItem="Q9h-8W-WLU" firstAttribute="height" secondItem="M8D-XS-QVV" secondAttribute="height" multiplier="0.23" id="Wt6-ci-IZa"/>
                                     <constraint firstItem="VHZ-lB-PVR" firstAttribute="width" secondItem="M8D-XS-QVV" secondAttribute="width" id="cre-VV-86p"/>
                                     <constraint firstItem="VHZ-lB-PVR" firstAttribute="height" secondItem="M8D-XS-QVV" secondAttribute="height" multiplier="0.05" id="jrj-i5-fO3"/>
                                 </constraints>
