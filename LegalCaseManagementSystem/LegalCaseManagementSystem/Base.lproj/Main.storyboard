@@ -151,11 +151,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="163" translatesAutoresizingMaskIntoConstraints="NO" id="M8D-XS-QVV" userLabel="BigContainerSV">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="M8D-XS-QVV" userLabel="BigContainerSV">
                                 <rect key="frame" x="20" y="79" width="353" height="753"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LCMS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHZ-lB-PVR">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="16.666666666666668"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
                                         <color key="backgroundColor" red="0.53403957310000005" green="0.61647796629999996" blue="0.47142154670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" red="0.0" green="0.4039215686" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
@@ -163,32 +163,32 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="99o-CB-wA9" userLabel="DashboardSV">
-                                        <rect key="frame" x="0.0" y="179.66666666666669" width="353" height="573.33333333333326"/>
+                                        <rect key="frame" x="0.0" y="28.333333333333314" width="353" height="724.66666666666674"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gAa-uf-reh" userLabel="Dashboardsub1">
-                                                <rect key="frame" x="0.0" y="0.0" width="353" height="282.66666666666669"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="358.33333333333331"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Q9h-8W-WLU" userLabel="PartiesSV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="282.66666666666669"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="358.33333333333331"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ds-CP-n8s" userLabel="PartiesImage">
-                                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="248.33333333333334"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="323.33333333333331"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myk-XH-B2u">
-                                                                <rect key="frame" x="0.0" y="256.33333333333331" width="172.66666666666666" height="26.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="331.33333333333337" width="172.66666666666666" height="27"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Parties"/>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lmA-TX-XYr" userLabel="MatterSV">
-                                                        <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="282.66666666666669"/>
+                                                        <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="358.33333333333331"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yAw-Ux-MUR" userLabel="MatterImage">
-                                                                <rect key="frame" x="0.0" y="0.0" width="172.33333333333334" height="248.33333333333334"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="172.33333333333334" height="323.33333333333331"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40R-g0-JWI">
-                                                                <rect key="frame" x="0.0" y="256.33333333333331" width="172.33333333333334" height="26.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="331.33333333333337" width="172.33333333333334" height="27"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Matter"/>
                                                             </button>
@@ -197,29 +197,29 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4HE-pV-jsk" userLabel="Dashboardsub2">
-                                                <rect key="frame" x="0.0" y="290.66666666666663" width="353" height="282.66666666666663"/>
+                                                <rect key="frame" x="0.0" y="366.33333333333337" width="353" height="358.33333333333337"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2Ts-z1-PR7" userLabel="ReportsSV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="282.66666666666669"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="358.33333333333331"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rfw-Ct-K80" userLabel="ReportsImage">
-                                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="248.33333333333334"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="323.33333333333331"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIo-aP-gmX">
-                                                                <rect key="frame" x="0.0" y="256.33333333333326" width="172.66666666666666" height="26.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="331.33333333333331" width="172.66666666666666" height="27"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Reports"/>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jfq-Bf-gfC" userLabel="ProfileSV">
-                                                        <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="282.66666666666669"/>
+                                                        <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="358.33333333333331"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C1b-fb-fR2" userLabel="ProfileScoreImage">
-                                                                <rect key="frame" x="0.0" y="0.0" width="172.33333333333334" height="248.33333333333334"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="172.33333333333334" height="323.33333333333331"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLO-1n-N8p">
-                                                                <rect key="frame" x="0.0" y="256.33333333333326" width="172.33333333333334" height="26.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="331.33333333333331" width="172.33333333333334" height="27"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="ProfileScore"/>
                                                             </button>
@@ -301,7 +301,6 @@
         <!--Navigation Controller-->
         <scene sceneID="eAr-i6-XC8">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b87-bM-JuY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="deF-mf-5Ze" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FIb-ks-c2j">
@@ -310,6 +309,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b87-bM-JuY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1066.4122137404579" y="3.5211267605633805"/>
         </scene>
