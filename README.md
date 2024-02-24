@@ -156,6 +156,12 @@ In landscape and portrait view entire information would be displayed with a prov
 
 - The above UI is a prototype. As the project progresses several modifications may be made accordingly to suit to the project requirements
 
+### Basic UI Configurations
+
+- Configured UI of Login page
+- Added functionalities, Constriants for views
+- configured the dashboard page
+- Configured firebase
 
 
 
