@@ -141,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2919.8473282442746" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="4663" y="-6"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Dp6-om-NyB">
@@ -248,10 +248,11 @@
                             <constraint firstAttribute="trailing" secondItem="M8D-XS-QVV" secondAttribute="trailing" constant="20" id="aoR-Dy-xSU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="0sS-m7-NbZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wcq-iU-YsV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3700" y="-6.3380281690140849"/>
+            <point key="canvasLocation" x="5553.4351145038163" y="-6.3380281690140849"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VGp-Xw-Uum">
@@ -300,22 +301,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mHi-XA-8zI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4496.9465648854957" y="-6.3380281690140849"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="eAr-i6-XC8">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="deF-mf-5Ze" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FIb-ks-c2j">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b87-bM-JuY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1066.4122137404579" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="6350.3816793893129" y="-6.3380281690140849"/>
         </scene>
     </scenes>
     <resources>
