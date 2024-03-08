@@ -48,6 +48,7 @@ class LoginVC: UIViewController {
             // Login successful
             // Navigate to next view controller or perform necessary action
             print("Login successful")
+            performSegue(withIdentifier: "dashboard", sender: self)
         } else {
             // Invalid credentials
             // Show error message or handle appropriately
