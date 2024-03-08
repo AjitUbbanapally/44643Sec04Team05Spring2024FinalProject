@@ -74,5 +74,26 @@ class LoginVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    @IBOutlet weak var LaunchLV: LottieAnimationView!
+    
+    {
+        didSet{
+            LaunchLV.animation = LottieAnimation.named("Legal lottie")
+            LaunchLV.play{[weak self] _ in
+                UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 2, delay: 2.0, options: [.curveEaseInOut]){
+                    self?.LaunchLV.alpha = 0.0
+                }
+                
+                
+            }
+            
+        }
+        
+        
+    }
+    
+    
 
 }
