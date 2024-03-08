@@ -58,9 +58,10 @@ class LoginVC: UIViewController {
     }
     
     func isValidCredentials(username: String, password: String) -> Bool {
-        
-        return !username.isEmpty && !password.isEmpty
-    }
+        if(username.count>0 && username.count<20) {
+            return !username.isEmpty && !password.isEmpty
+        }
+        else{return false}}
     
     
     
