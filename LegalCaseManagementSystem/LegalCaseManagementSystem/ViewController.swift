@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        performSegue(withIdentifier: "login", sender: self)
         // Do any additional setup after loading the view.
         
         //        let animatedGradient = AnimatedGradientView(frame: view.bounds)
