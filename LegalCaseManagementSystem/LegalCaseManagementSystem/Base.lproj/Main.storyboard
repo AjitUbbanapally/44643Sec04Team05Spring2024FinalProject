@@ -261,10 +261,10 @@
             </objects>
             <point key="canvasLocation" x="6480.1526717557254" y="-6.3380281690140849"/>
         </scene>
-        <!--View Controller-->
+        <!--ReportsVC-->
         <scene sceneID="VGp-Xw-Uum">
             <objects>
-                <viewController id="19i-aF-Vzf" sceneMemberID="viewController">
+                <viewController id="19i-aF-Vzf" customClass="ReportsVC" customModule="LegalCaseManagementSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hsQ-T7-9UR">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -342,10 +342,10 @@
             </objects>
             <point key="canvasLocation" x="7277.0992366412211" y="-6.3380281690140849"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile ScoreVC-->
         <scene sceneID="x3e-n2-5Fe">
             <objects>
-                <viewController id="aza-De-rKq" sceneMemberID="viewController">
+                <viewController id="aza-De-rKq" customClass="ProfileScoreVC" customModule="LegalCaseManagementSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y9V-lB-xeW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
