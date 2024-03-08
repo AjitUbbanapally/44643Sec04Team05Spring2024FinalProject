@@ -23,6 +23,7 @@
 		EC60132C2B9AC17900FB0E76 /* PartyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC60132B2B9AC17900FB0E76 /* PartyVC.swift */; };
 		EC60132E2B9AC7FD00FB0E76 /* ReportsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC60132D2B9AC7FD00FB0E76 /* ReportsVC.swift */; };
 		EC6013302B9AC83600FB0E76 /* ProfileScoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC60132F2B9AC83600FB0E76 /* ProfileScoreVC.swift */; };
+		EC6013322B9AD0CB00FB0E76 /* MatterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6013312B9AD0CB00FB0E76 /* MatterVC.swift */; };
 		EC71EA822B86E9E3004FC72F /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = EC71EA812B86E9E3004FC72F /* AnimatedGradientView */; };
 		EC9AC47D2B89A936004B2B68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC9AC47C2B89A936004B2B68 /* GoogleService-Info.plist */; };
 		EC9AC4802B89ABD5004B2B68 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EC9AC47F2B89ABD5004B2B68 /* FirebaseAnalytics */; };
@@ -71,6 +72,7 @@
 		EC60132B2B9AC17900FB0E76 /* PartyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyVC.swift; sourceTree = "<group>"; };
 		EC60132D2B9AC7FD00FB0E76 /* ReportsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsVC.swift; sourceTree = "<group>"; };
 		EC60132F2B9AC83600FB0E76 /* ProfileScoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScoreVC.swift; sourceTree = "<group>"; };
+		EC6013312B9AD0CB00FB0E76 /* MatterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatterVC.swift; sourceTree = "<group>"; };
 		EC9AC47C2B89A936004B2B68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 				EC20B72B2B828FFB00152DFF /* ViewController.swift */,
 				EC6013272B9ABA2300FB0E76 /* LoginVC.swift */,
 				EC20B72D2B828FFB00152DFF /* Main.storyboard */,
+				EC6013312B9AD0CB00FB0E76 /* MatterVC.swift */,
 				EC60132F2B9AC83600FB0E76 /* ProfileScoreVC.swift */,
 				EC60132D2B9AC7FD00FB0E76 /* ReportsVC.swift */,
 				EC60132B2B9AC17900FB0E76 /* PartyVC.swift */,
@@ -323,6 +326,7 @@
 				EC20B7282B828FFB00152DFF /* AppDelegate.swift in Sources */,
 				EC20B72A2B828FFB00152DFF /* SceneDelegate.swift in Sources */,
 				EC6013282B9ABA2300FB0E76 /* LoginVC.swift in Sources */,
+				EC6013322B9AD0CB00FB0E76 /* MatterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
