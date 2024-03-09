@@ -39,7 +39,7 @@ class ProfileScoreVC: UIViewController {
         ssn.isEnabled=true
         casetype.isEnabled=true
         noOfConvictedFelonies.isEnabled=true
-        defendantOrPlaintiff.isEnabled=true
+        
         
         
      
