@@ -354,6 +354,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Aee-DC-IU9"/>
+                    <connections>
+                        <outlet property="codesignature" destination="7Ko-5G-oxR" id="lC2-QT-f83"/>
+                        <outlet property="scope" destination="5qV-cl-l1q" id="JbF-vE-sw1"/>
+                        <outlet property="testCoreAnimation" destination="zEp-AD-isW" id="Vdp-kG-fNt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mHi-XA-8zI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

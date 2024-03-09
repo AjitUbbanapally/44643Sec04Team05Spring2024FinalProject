@@ -9,6 +9,9 @@ import UIKit
 
 class ReportsVC: UIViewController {
 
+    @IBOutlet weak var testCoreAnimation: UIImageView!
+    @IBOutlet weak var codesignature: UIImageView!
+    @IBOutlet weak var scope: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

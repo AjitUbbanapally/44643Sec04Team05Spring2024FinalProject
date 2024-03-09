@@ -33,6 +33,14 @@ class ProfileScoreVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        partyName.isEnabled=true
+        gender.isEnabled=true
+        dateofbirth.isEnabled=true
+        ssn.isEnabled=true
+        casetype.isEnabled=true
+        noOfConvictedFelonies.isEnabled=true
+        defendantOrPlaintiff.isEnabled=true
+        
         
      
                 
