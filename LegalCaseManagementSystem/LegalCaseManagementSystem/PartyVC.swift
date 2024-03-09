@@ -9,6 +9,11 @@ import UIKit
 
 class PartyVC: UIViewController {
 
+    @IBOutlet weak var search: UIButton!
+    @IBOutlet weak var detailsOfselection: UILabel!
+    @IBOutlet weak var aliasName: UILabel!
+    @IBOutlet weak var caseType: UILabel!
+    @IBOutlet weak var partyName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 

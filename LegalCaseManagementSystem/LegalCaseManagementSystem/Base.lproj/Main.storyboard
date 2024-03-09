@@ -536,6 +536,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pSb-qS-dLE"/>
+                    <connections>
+                        <outlet property="aliasName" destination="uc1-vw-ES2" id="Cg2-0r-6aG"/>
+                        <outlet property="caseType" destination="Wku-Ut-oyN" id="2Im-Cl-Vck"/>
+                        <outlet property="detailsOfselection" destination="scT-fE-2C1" id="5fA-zT-MYv"/>
+                        <outlet property="partyName" destination="epO-B3-Fdx" id="bb2-V0-cJ0"/>
+                        <outlet property="search" destination="9b2-AF-HuG" id="mty-Mi-4C8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZA-6b-5d8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
