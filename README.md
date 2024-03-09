@@ -163,6 +163,12 @@ In landscape and portrait view entire information would be displayed with a prov
 - configured the dashboard page
 - Configured firebase
 
+### User Interface design
+- Added additional view controllers
+- Created cocoa class for each view controllers
+- Implemented navigation feature between each view controllers
+- Created TableView  
+
 
 
 
