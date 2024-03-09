@@ -27,19 +27,18 @@ class ProfileScoreVC: UIViewController {
     @IBOutlet weak var defendantOrPlaintiff: UITextField!
     
     
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        partyName.isEnabled=true
-        gender.isEnabled=true
-        dateofbirth.isEnabled=true
-        ssn.isEnabled=true
-        casetype.isEnabled=true
-        noOfConvictedFelonies.isEnabled=true
-        
+        if(partyName==null){
+            gender.isEnabled=false
+            dateofbirth.isEnabled=false
+            ssn.isEnabled=false
+            casetype.isEnabled=false
+            noOfConvictedFelonies.isEnabled=false
+        }else{
+            partyName.isEnabled=true
+        }
         
         
         
