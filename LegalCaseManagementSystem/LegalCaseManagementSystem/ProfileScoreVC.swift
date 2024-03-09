@@ -6,13 +6,38 @@
 //
 
 import UIKit
+import CoreML
 
 class ProfileScoreVC: UIViewController {
 
+    @IBOutlet weak var partyName: UITextField!
+    
+    @IBOutlet weak var gender: UITextField!
+    
+    @IBOutlet weak var dateofbirth: UITextField!
+    
+    @IBOutlet weak var ssn: UITextField!
+    
+    @IBOutlet weak var casetype: UITextField!
+    
+    
+    @IBOutlet weak var noOfConvictedFelonies: UITextField!
+    
+    
+    @IBOutlet weak var defendantOrPlaintiff: UITextField!
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+     
+                
+            
 
-        // Do any additional setup after loading the view.
     }
     
 

@@ -434,6 +434,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oLD-R6-qmc"/>
+                    <connections>
+                        <outlet property="casetype" destination="TtB-sM-lsi" id="1Vu-WP-Auw"/>
+                        <outlet property="dateofbirth" destination="Jas-Ij-DKp" id="Bfi-Z7-dae"/>
+                        <outlet property="defendantOrPlaintiff" destination="h6i-y5-4Vl" id="ZPh-96-Q2y"/>
+                        <outlet property="gender" destination="uG5-u4-Jm3" id="EiB-4m-GzT"/>
+                        <outlet property="noOfConvictedFelonies" destination="H39-6z-OfM" id="GFu-ps-lho"/>
+                        <outlet property="partyName" destination="Ufk-ov-9Cx" id="MNf-Q9-qsI"/>
+                        <outlet property="ssn" destination="rUX-p5-bW1" id="Kbl-aE-NUD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78y-A6-c36" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -604,7 +613,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
