@@ -111,7 +111,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Fpz-gL-bD0">
                                         <rect key="frame" x="0.0" y="410.66666666666663" width="353" height="34.333333333333314"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qg-m6-FcA">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qg-m6-FcA" userLabel="ForgotPasswordBTN">
                                                 <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Forgot password! "/>
@@ -150,7 +150,10 @@
                         <outlet property="LauncHLV" destination="Mxj-wh-uqq" id="wVb-e0-KP1"/>
                         <outlet property="PasswordTF" destination="cMc-21-p3t" id="4Pw-Jg-xQT"/>
                         <outlet property="UserNameTF" destination="nHw-Ex-jpt" id="Fbg-pu-CrQ"/>
+                        <outlet property="forgorPasswordBTN" destination="1Qg-m6-FcA" id="QhG-CW-r2E"/>
+                        <outlet property="loginBTN" destination="QaO-PM-A4G" id="B8M-NK-f8Q"/>
                         <outlet property="passwordTF" destination="cMc-21-p3t" id="LGZ-04-bO8"/>
+                        <outlet property="signupBTN" destination="dyH-p8-RKT" id="BvR-m6-C4f"/>
                         <outlet property="usernameTF" destination="nHw-Ex-jpt" id="aSd-ot-3z2"/>
                         <segue destination="Hjr-hn-K4U" kind="show" id="Sja-hm-WYS"/>
                     </connections>
@@ -468,22 +471,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lOS-AD-ZNg" userLabel="TableSV">
-                                <rect key="frame" x="20" y="224" width="353" height="40.666666666666686"/>
+                                <rect key="frame" x="20" y="270.33333333333331" width="353" height="71.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Party name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epO-B3-Fdx">
-                                        <rect key="frame" x="0.0" y="0.0" width="112.33333333333333" height="40.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="112.33333333333333" height="71.333333333333329"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Case type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wku-Ut-oyN">
-                                        <rect key="frame" x="120.33333333333334" y="0.0" width="112.33333333333334" height="40.666666666666664"/>
+                                        <rect key="frame" x="120.33333333333334" y="0.0" width="112.33333333333334" height="71.333333333333329"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alias name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uc1-vw-ES2">
-                                        <rect key="frame" x="240.66666666666671" y="0.0" width="112.33333333333334" height="40.666666666666664"/>
+                                        <rect key="frame" x="240.66666666666671" y="0.0" width="112.33333333333334" height="71.333333333333329"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -491,23 +494,23 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gpS-Cj-ru7" userLabel="DetailSV">
-                                <rect key="frame" x="68" y="163.33333333333334" width="298" height="40.666666666666657"/>
+                                <rect key="frame" x="68" y="178.66666666666666" width="298" height="71.666666666666657"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details of selection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scT-fE-2C1">
-                                        <rect key="frame" x="0.0" y="0.0" width="145" height="40.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="71.666666666666671"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9b2-AF-HuG">
-                                        <rect key="frame" x="153" y="0.0" width="145" height="40.666666666666664"/>
+                                        <rect key="frame" x="153" y="0.0" width="145" height="71.666666666666671"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="search🔍"/>
                                     </button>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LMCS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6L-gY-cGQ">
-                                <rect key="frame" x="20" y="122.99999999999999" width="353" height="20.333333333333329"/>
+                                <rect key="frame" x="20" y="123.00000000000001" width="353" height="35.666666666666671"/>
                                 <color key="backgroundColor" red="0.63921568630000003" green="0.82352941180000006" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
@@ -636,7 +639,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

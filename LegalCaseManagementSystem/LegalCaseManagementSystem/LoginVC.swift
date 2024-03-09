@@ -19,7 +19,13 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passwordTF: UITextField!
     
     
-
+    @IBOutlet weak var loginBTN: UIButton!
+    
+    
+    @IBOutlet weak var forgotPasswordBTN: UIButton!
+    
+    @IBOutlet weak var signupBTN: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,6 +39,16 @@ class LoginVC: UIViewController {
                                             (colors: ["#A3D256", "#A3D256", "#A3D256"], .left, .axial)]
         view.addSubview(animatedGradient)
         view.sendSubviewToBack(animatedGradient)
+        
+      
+        usernameTF.isEnabled = true
+        passwordTF.isEnabled = true
+        loginBTN.isEnabled = true
+        forgotPasswordBTN.isEnabled = true
+        signupBTN.isEnabled = true
+        
+        
+        
     }
     
     
