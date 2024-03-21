@@ -166,8 +166,7 @@ In landscape and portrait view entire information would be displayed with a prov
 ### User Interface design
 - Added additional view controllers
 - Created cocoa class for each view controllers
-- Implemented navigation feature between each view controllers
-- Created TableView  
+- Implemented navigation feature between each view controllers 
 
 
 
