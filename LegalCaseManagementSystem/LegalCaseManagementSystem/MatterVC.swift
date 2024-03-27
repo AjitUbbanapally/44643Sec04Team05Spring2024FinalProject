@@ -20,8 +20,8 @@ class MatterVC: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        ClientTableView.delegate = self
-        ClientTableView.dataSource = self
+        //ClientTableView.delegate = self
+      //  ClientTableView.dataSource = self
     }
     
     
