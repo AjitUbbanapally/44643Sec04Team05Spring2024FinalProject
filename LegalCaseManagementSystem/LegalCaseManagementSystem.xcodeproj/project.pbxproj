@@ -18,6 +18,7 @@
 		EC20B73F2B828FFE00152DFF /* LegalCaseManagementSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B73E2B828FFE00152DFF /* LegalCaseManagementSystemTests.swift */; };
 		EC20B7492B828FFE00152DFF /* LegalCaseManagementSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B7482B828FFE00152DFF /* LegalCaseManagementSystemUITests.swift */; };
 		EC20B74B2B828FFE00152DFF /* LegalCaseManagementSystemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B74A2B828FFE00152DFF /* LegalCaseManagementSystemUITestsLaunchTests.swift */; };
+		EC5069192BB6463800DC108B /* ResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5069182BB6463800DC108B /* ResetPasswordVC.swift */; };
 		EC6013282B9ABA2300FB0E76 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6013272B9ABA2300FB0E76 /* LoginVC.swift */; };
 		EC60132A2B9AC11B00FB0E76 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6013292B9AC11B00FB0E76 /* DashboardVC.swift */; };
 		EC60132C2B9AC17900FB0E76 /* PartyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC60132B2B9AC17900FB0E76 /* PartyVC.swift */; };
@@ -67,6 +68,7 @@
 		EC20B7442B828FFE00152DFF /* LegalCaseManagementSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegalCaseManagementSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC20B7482B828FFE00152DFF /* LegalCaseManagementSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalCaseManagementSystemUITests.swift; sourceTree = "<group>"; };
 		EC20B74A2B828FFE00152DFF /* LegalCaseManagementSystemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalCaseManagementSystemUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EC5069182BB6463800DC108B /* ResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVC.swift; sourceTree = "<group>"; };
 		EC6013272B9ABA2300FB0E76 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		EC6013292B9AC11B00FB0E76 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		EC60132B2B9AC17900FB0E76 /* PartyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyVC.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				EC20B7272B828FFB00152DFF /* AppDelegate.swift */,
 				EC20B7292B828FFB00152DFF /* SceneDelegate.swift */,
 				EC20B72B2B828FFB00152DFF /* ViewController.swift */,
+				EC5069182BB6463800DC108B /* ResetPasswordVC.swift */,
 				EC6013272B9ABA2300FB0E76 /* LoginVC.swift */,
 				EC20B72D2B828FFB00152DFF /* Main.storyboard */,
 				EC6013312B9AD0CB00FB0E76 /* MatterVC.swift */,
@@ -321,6 +324,7 @@
 				EC60132C2B9AC17900FB0E76 /* PartyVC.swift in Sources */,
 				EC60132E2B9AC7FD00FB0E76 /* ReportsVC.swift in Sources */,
 				EC6013302B9AC83600FB0E76 /* ProfileScoreVC.swift in Sources */,
+				EC5069192BB6463800DC108B /* ResetPasswordVC.swift in Sources */,
 				EC60132A2B9AC11B00FB0E76 /* DashboardVC.swift in Sources */,
 				7CDF589C2B88150300C7933C /* LCMSVC.swift in Sources */,
 				EC20B7282B828FFB00152DFF /* AppDelegate.swift in Sources */,
