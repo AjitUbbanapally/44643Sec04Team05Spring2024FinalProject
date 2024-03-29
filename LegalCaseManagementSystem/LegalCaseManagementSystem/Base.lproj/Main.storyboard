@@ -698,27 +698,44 @@
                                 <rect key="frame" x="76" y="362" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJq-GY-bUX">
-                                <rect key="frame" x="60" y="590" width="107" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="User name">
-                                    <color key="baseForegroundColor" systemColor="linkColor"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5O-Gu-ElB">
-                                <rect key="frame" x="230" y="590" width="97" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="passward"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SM2-zR-heU" userLabel="Login">
-                                <rect key="frame" x="159" y="678" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="LCMl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ON-Y6-dYW">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="r2f-Y1-FiD">
+                                <rect key="frame" x="20" y="590" width="275.66666666666669" height="121.66666666666663"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="LDZ-g0-qPy">
+                                        <rect key="frame" x="0.0" y="0.0" width="275.66666666666669" height="34.333333333333336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJq-GY-bUX">
+                                                <rect key="frame" x="0.0" y="0.0" width="106.33333333333333" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="User name">
+                                                    <color key="baseForegroundColor" systemColor="linkColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5O-Gu-ElB">
+                                                <rect key="frame" x="169.33333333333334" y="0.0" width="106.33333333333334" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="passward"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="85" translatesAutoresizingMaskIntoConstraints="NO" id="qaF-Cf-xGo" userLabel="ButtonSV">
+                                        <rect key="frame" x="40.666666666666657" y="87.333333333333329" width="234.99999999999997" height="34.333333333333329"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SM2-zR-heU" userLabel="Login">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3f5-p8-SMV" userLabel="Logout">
+                                                <rect key="frame" x="160" y="0.0" width="75" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LCMl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ON-Y6-dYW">
                                 <rect key="frame" x="168" y="-265" width="353" height="719"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -730,14 +747,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qlJ-UP-BzK">
+                                <rect key="frame" x="76" y="632" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lV0-cv-gmO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lV0-cv-gmO" firstAttribute="trailing" secondItem="7ON-Y6-dYW" secondAttribute="trailing" constant="20" id="AfP-LZ-qT9"/>
                             <constraint firstItem="7ON-Y6-dYW" firstAttribute="top" secondItem="lV0-cv-gmO" secondAttribute="top" constant="20" id="BGv-Qt-meU"/>
+                            <constraint firstAttribute="trailing" secondItem="7ON-Y6-dYW" secondAttribute="trailing" constant="20" id="LWZ-Sb-Ffj"/>
+                            <constraint firstItem="7ON-Y6-dYW" firstAttribute="leading" secondItem="lV0-cv-gmO" secondAttribute="leading" constant="20" id="alT-vN-QnJ"/>
                             <constraint firstItem="7ON-Y6-dYW" firstAttribute="leading" secondItem="lV0-cv-gmO" secondAttribute="leading" constant="20" id="eXr-3H-Hxm"/>
+                            <constraint firstItem="r2f-Y1-FiD" firstAttribute="top" secondItem="7ON-Y6-dYW" secondAttribute="bottom" constant="20" id="hUG-Us-QQ5"/>
                             <constraint firstItem="lV0-cv-gmO" firstAttribute="bottom" secondItem="7ON-Y6-dYW" secondAttribute="bottom" constant="20" id="hmF-5S-BOh"/>
+                            <constraint firstItem="7ON-Y6-dYW" firstAttribute="top" secondItem="UKz-EN-jnh" secondAttribute="top" constant="20" id="pgb-ng-N9a"/>
                         </constraints>
                     </view>
                 </viewController>
