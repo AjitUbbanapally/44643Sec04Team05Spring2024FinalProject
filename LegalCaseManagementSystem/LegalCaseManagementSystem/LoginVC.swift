@@ -57,8 +57,8 @@ class LoginVC: UIViewController {
         
         AudioServicesPlaySystemSound(1103)
         // Perform login authentication
-        let username = usernameTF.text ?? ""
-        let password = passwordTF.text ?? ""
+        
+        
         
         if isValidCredentials(username: username, password: password) {
             // Login successful
