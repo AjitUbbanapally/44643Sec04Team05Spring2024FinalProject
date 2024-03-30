@@ -112,6 +112,10 @@ We can click on Home button to go back to Dashboard screen (screen 2)
 ### Screen5 -- PARTY/CLIENT RELATED BASIC DETAILS
 ![screen5](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/6c55dfed-301c-44f5-8e32-13a4eb149e2c)
 - By clicking on each party name from screen 3 it will be navigate towards this page and display the basic details of party or client. We can click on Home button to go back to Dashboard screen (screen 2)
+- Party Detail Page
+It should have an scroll view of all the data of the party fetched from database and it should have 3 buttons at the top. The 3 buttons will be Edit, Delete and Create Matter.
+Edit button should make all the above text fields editable and saving the edit should make changes to firebase. Delete should delete the record. Create Matter should redirect to a new page.
+
 
 
 ### Screen 6 -- CLIENTS DETAILED CASE INFORMATION
