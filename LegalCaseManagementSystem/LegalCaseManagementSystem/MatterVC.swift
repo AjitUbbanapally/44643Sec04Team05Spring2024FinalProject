@@ -44,71 +44,36 @@ class MatterVC: FormViewController {
                                    }
                    }
                    
-                   +++ Section("ADMISSION FACTORS")
+                   +++ Section("MATTERS")
                    
         <<< SliderRow("GRE") {
-                           $0.title = "GRE Score"
+                           $0.title = "Matter Id"
                            $0.value = 0.0
-                           $0.cell.slider.minimumValue = 260.0
-                           $0.cell.slider.maximumValue = 340.0
-                           $0.cell.slider.value = 5
+                           
+                           
                        }
                        
-                       <<< SliderRow("TOEFL") {
-                           $0.title = "TOEFL Score"
-                           $0.value = 0.0
-                           $0.cell.slider.minimumValue = 0.0
-                           $0.cell.slider.maximumValue = 120.0
-                           $0.cell.slider.value = 5
-                       }
                        
                       
                        
-                       <<< SegmentedRow<String>("UniversityRating") {
-                           $0.title = "University Rating"
-                           $0.options = ["1", "2", "3", "4", "5"]
+                       <<< SegmentedRow<String>("Case Type") {
+                           $0.title = "Case Title"
+                           $0.options = ["ip", "insolvency", "property", "arbitration", "LLP"]
                            $0.value = "1"
                        }
                        
-                       <<< SegmentedRow<String>("SOP") {
+                       <<< SegmentedRow<String>("Matter Value ") {
                            $0.title = "SOP"
                            $0.options = ["1", "2", "3", "4", "5"]
                            $0.value = "1"
                        }
                        
-                       <<< SegmentedRow<String>("LOR") {
-                           $0.title = "LOR"
-                           $0.options = ["1", "2", "3", "4", "5"]
-                           $0.value = "1"
-                       }
-                
-                      <<< SliderRow("CGPA") {
-                           $0.title = "CGPA"
-                           $0.value = 0.0
-                           $0.cell.slider.minimumValue = 0.0
-                           $0.cell.slider.maximumValue = 10.0
-                       }
                        
-        
-                   
-                   <<< SwitchRow("ResearchInterests") {
-                       $0.title = "Research"
-                       $0.value = false
-                   }
-                   
-                   +++ Section("ACTIONS")
-                   
-                   <<< ButtonRow() {
-                       $0.title = "Predict"
+                
+                      <<< ButtonRow() {
+                       $0.title = "Date of Incident"
                        $0.onCellSelection { cell, row in
-                           self.predictprobabilityAdmissionAcceptance()
-                       }
-                   }
-                   
-                   <<< ButtonRow() {
-                       $0.title = "Clear"
-                       $0.onCellSelection { cell, row in
-                           self.resetForm()
+                           
                        }
                    }
                }
