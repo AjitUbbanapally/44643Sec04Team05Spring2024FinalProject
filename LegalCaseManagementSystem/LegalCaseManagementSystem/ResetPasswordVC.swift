@@ -9,11 +9,39 @@ import UIKit
 
 class ResetPasswordVC: UIViewController {
 
+    
+    @IBOutlet weak var emailTF: UITextField!
+    
+    @IBOutlet weak var passwordTF: UITextField!
+    
+    @IBOutlet weak var backtologinBTN: UIButton!
+    
+    @IBOutlet weak var cancelBTN: UIButton!
+    
+    @IBOutlet weak var repasswordTF: UITextField!{
+        didSet{
+            if((passwordTF) != nil){
+                repasswordTF.isEnabled = true
+                repasswordTF.isHidden = false
+        }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        emailTF.isEnabled = true
+        passwordTF.isEnabled = true
+        repasswordTF.isEnabled = false
         // Do any additional setup after loading the view.
+        
+        backtologinBTN.isEnabled = false
+        cancelBTN.isEnabled = false
+        repasswordTF.isHidden = true
+        
+        
     }
+    
     
 
     /*
