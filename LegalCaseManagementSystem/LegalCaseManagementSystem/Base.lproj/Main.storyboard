@@ -429,6 +429,7 @@
                         <outlet property="ReportsImage" destination="rfw-Ct-K80" id="kYW-ad-Dec"/>
                         <outlet property="partyImage" destination="4ds-CP-n8s" id="052-r8-wfb"/>
                         <segue destination="NO6-kb-fhb" kind="show" id="Mng-Nf-Wsr"/>
+                        <segue destination="4zt-wp-JFv" kind="show" id="XiH-k7-RTO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wcq-iU-YsV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -646,6 +647,7 @@
         <scene sceneID="kTQ-G8-cKj">
             <objects>
                 <splitViewController allowDoubleColumnStyle="YES" primaryBackgroundStyle="sidebar" id="4zt-wp-JFv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="i1x-aY-qTw"/>
                     <connections>
                         <segue destination="Nzu-o5-zbB" kind="relationship" relationship="masterViewController" id="78Q-v7-glh"/>
                         <segue destination="LDL-u3-nEI" kind="relationship" relationship="detailViewController" id="dgc-po-HcQ"/>
