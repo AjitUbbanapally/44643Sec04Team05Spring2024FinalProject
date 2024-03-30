@@ -36,7 +36,7 @@ class MatterVC: FormViewController {
             form +++ Section()
                    
                    <<< LabelRow() {
-                       $0.title = "The details of Matters"
+                       $0.title = "The details of Matters with Legal attorney"
                        $0.cellUpdate { cell, row in
                                        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 18.0)
                                        cell.textLabel?.numberOfLines = 0
@@ -46,7 +46,7 @@ class MatterVC: FormViewController {
                    
                    +++ Section("MATTER")
                    
-        <<< SliderRow("Matter") {
+        <<< SliderRow("Matters") {
                            $0.title = "Matter Id"
                            $0.value = 0.0
                            
@@ -54,18 +54,14 @@ class MatterVC: FormViewController {
                        }
                        
                        
-                      
-                       
                        <<< SegmentedRow<String>("Case Type") {
                            $0.title = "Case Title"
                            $0.options = ["ip", "insolvency", "property", "arbitration", "LLP"]
                            $0.value = "1"
                        }
-                       
                        <<< SegmentedRow<String>("Matter Value ") {
-                           $0.title = "Matter Value"
-                           
-                        $0.value = "1"
+                           $0.title = "Matter monetary Value"
+                           $0.value = "1"
                        }
                        
                        
