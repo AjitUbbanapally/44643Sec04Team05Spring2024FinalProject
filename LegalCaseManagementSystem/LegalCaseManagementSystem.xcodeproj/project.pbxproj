@@ -34,6 +34,7 @@
 		EC9AC4882B89ABD5004B2B68 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EC9AC4872B89ABD5004B2B68 /* FirebaseFirestore */; };
 		EC9AC48A2B89ABD5004B2B68 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EC9AC4892B89ABD5004B2B68 /* FirebaseFirestoreSwift */; };
 		EC9AC48C2B89ABD5004B2B68 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EC9AC48B2B89ABD5004B2B68 /* FirebaseStorage */; };
+		ECEBD2A42BB7A3100080FB66 /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = ECEBD2A32BB7A3100080FB66 /* Eureka */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 				EC9AC48C2B89ABD5004B2B68 /* FirebaseStorage in Frameworks */,
 				EC9AC4822B89ABD5004B2B68 /* FirebaseAnalyticsSwift in Frameworks */,
 				EC71EA822B86E9E3004FC72F /* AnimatedGradientView in Frameworks */,
+				ECEBD2A42BB7A3100080FB66 /* Eureka in Frameworks */,
 				7CEBFFA22B87121100F3AA5B /* Lottie in Frameworks */,
 				EC9AC4802B89ABD5004B2B68 /* FirebaseAnalytics in Frameworks */,
 				EC9AC4882B89ABD5004B2B68 /* FirebaseFirestore in Frameworks */,
@@ -198,6 +200,7 @@
 				EC9AC4872B89ABD5004B2B68 /* FirebaseFirestore */,
 				EC9AC4892B89ABD5004B2B68 /* FirebaseFirestoreSwift */,
 				EC9AC48B2B89ABD5004B2B68 /* FirebaseStorage */,
+				ECEBD2A32BB7A3100080FB66 /* Eureka */,
 			);
 			productName = LegalCaseManagementSystem;
 			productReference = EC20B7242B828FFB00152DFF /* LegalCaseManagementSystem.app */;
@@ -275,6 +278,7 @@
 				EC71EA802B86E9E3004FC72F /* XCRemoteSwiftPackageReference "AnimatedGradientView" */,
 				7CEBFFA02B87121100F3AA5B /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				EC9AC47E2B89ABD5004B2B68 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				ECEBD2A22BB7A3100080FB66 /* XCRemoteSwiftPackageReference "Eureka" */,
 			);
 			productRefGroup = EC20B7252B828FFB00152DFF /* Products */;
 			projectDirPath = "";
@@ -697,6 +701,14 @@
 				version = 10.21.0;
 			};
 		};
+		ECEBD2A22BB7A3100080FB66 /* XCRemoteSwiftPackageReference "Eureka" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/Eureka.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -744,6 +756,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EC9AC47E2B89ABD5004B2B68 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		ECEBD2A32BB7A3100080FB66 /* Eureka */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECEBD2A22BB7A3100080FB66 /* XCRemoteSwiftPackageReference "Eureka" */;
+			productName = Eureka;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
