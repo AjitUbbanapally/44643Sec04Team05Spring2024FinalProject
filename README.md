@@ -172,11 +172,11 @@ In landscape and portrait view entire information would be displayed with a prov
 ### Reset Password Page
 - added reset functionality so that user can set their new password
 
-### Euerka framework
+### Eureka framework
 - added some components from Eureka Pachkage into Matter view page
 
 ### Predict score page
-- Workoing on Machine learning model so as to train the model for predicting the scores based on past data.
+- Working on Machine learning model so as to train the model for predicting the profile scores based on past data.
 
 
 
