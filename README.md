@@ -166,7 +166,19 @@ In landscape and portrait view entire information would be displayed with a prov
 ### User Interface design
 - Added additional view controllers
 - Created cocoa class for each view controllers
-- Implemented navigation feature between each view controllers 
+- Implemented navigation feature between each view controllers
+
+
+### Reset Password Page
+- added reset functionality so that user can set their new password
+
+ ### Predict score page
+- Working on Machine learning model so as to train the model for predicting the profile scores based on past data.
+
+
+### Eureka framework
+- added some components from Eureka Pachkage into Matter view page
+
 
 
 
