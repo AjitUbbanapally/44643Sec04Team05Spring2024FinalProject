@@ -67,16 +67,22 @@
                                         <rect key="frame" x="0.0" y="239" width="353" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Password" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlq-pu-DGb">
-                                                <rect key="frame" x="0.0" y="6.9999999999999982" width="172.66666666666666" height="20.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="6.9999999999999982" width="112.33333333333333" height="20.333333333333329"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cMc-21-p3t">
-                                                <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="34"/>
+                                                <rect key="frame" x="120.33333333333334" y="0.0" width="112.33333333333334" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnZ-an-120" userLabel="MessageLBL">
+                                                <rect key="frame" x="240.66666666666671" y="6.9999999999999982" width="112.33333333333334" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -151,6 +157,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="LauncHLV" destination="Mxj-wh-uqq" id="wVb-e0-KP1"/>
+                        <outlet property="MessageLBL" destination="gnZ-an-120" id="CC6-29-uMS"/>
                         <outlet property="PasswordTF" destination="cMc-21-p3t" id="4Pw-Jg-xQT"/>
                         <outlet property="UserNameTF" destination="nHw-Ex-jpt" id="Fbg-pu-CrQ"/>
                         <outlet property="forgorPasswordBTN" destination="1Qg-m6-FcA" id="QhG-CW-r2E"/>

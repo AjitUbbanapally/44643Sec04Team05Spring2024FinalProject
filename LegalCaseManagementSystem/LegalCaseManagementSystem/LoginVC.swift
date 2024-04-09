@@ -26,6 +26,9 @@ class LoginVC: UIViewController {
     
     @IBOutlet weak var signupBTN: UIButton!
     
+    
+    @IBOutlet weak var messageLBL: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -58,26 +61,48 @@ class LoginVC: UIViewController {
         AudioServicesPlaySystemSound(1103)
         // Perform login authentication
         
+        guard let emailID = usernameTF.text, !emailID.isEmpty else {
+                        messageLBL.text = "Please enter Username!"
+                        return
+                    }
+         
+                    guard let paswrd = passwordTF.text, !paswrd.isEmpty else {
+                        messageLBL.text = "Please enter Password!"
+                        return
+                    }
+                
+                guard let emailID = usernameTF.text else { return }
+                guard let pswrd = passwordTF.text else { return  }
+                
+                Auth.auth().signIn(withEmail: emailID, password: pswrd){ [weak self] authResult, error in
+                    guard self != nil else { return }
+                    if let error = error {
+                        print("Login failed:", error.localizedDescription)
+                        self?.messageLBL.text = "Invalid Login Credentials! Please try again."
+                        return
+                    }
+                    self?.performSegue(withIdentifier: "loginToProducts", sender: nil)
+                }
         
         
-        if isValidCredentials(username: username, password: password) {
-            // Login successful
-            // Navigate to next view controller or perform necessary action
-            print("Login successful")
-            performSegue(withIdentifier: "dashboard", sender: self)
-        } else {
-            // Invalid credentials
-            // Show error message or handle appropriately
-            print("Invalid credentials")
-        }
-        
-    }
-    
-    func isValidCredentials(username: String, password: String) -> Bool {
-        if(username.count>0 && username.count<20) {
-            return !username.isEmpty && !password.isEmpty
-        }
-        else{return false}}
+//        if isValidCredentials(username: username, password: password) {
+//            // Login successful
+//            // Navigate to next view controller or perform necessary action
+//            print("Login successful")
+//            performSegue(withIdentifier: "dashboard", sender: self)
+//        } else {
+//            // Invalid credentials
+//            // Show error message or handle appropriately
+//            print("Invalid credentials")
+//        }
+//        
+//    }
+//    
+//    func isValidCredentials(username: String, password: String) -> Bool {
+//        if(username.count>0 && username.count<20) {
+//            return !username.isEmpty && !password.isEmpty
+//        }
+//        else{return false}}
     
     
     
