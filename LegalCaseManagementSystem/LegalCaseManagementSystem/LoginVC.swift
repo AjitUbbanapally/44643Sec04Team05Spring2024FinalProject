@@ -9,6 +9,7 @@ import UIKit
 import AnimatedGradientView
 import AVFoundation
 import Lottie
+import FirebaseAuth
 
 class LoginVC: UIViewController {
     
