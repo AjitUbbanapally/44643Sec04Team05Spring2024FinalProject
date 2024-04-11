@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7CDF589C2B88150300C7933C /* LCMSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF589B2B88150300C7933C /* LCMSVC.swift */; };
 		7CEBFFA22B87121100F3AA5B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7CEBFFA12B87121100F3AA5B /* Lottie */; };
+		BA8BA0C42BC89A9D009F01EC /* CaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8BA0C32BC89A9D009F01EC /* CaseModel.swift */; };
 		EC20B7282B828FFB00152DFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B7272B828FFB00152DFF /* AppDelegate.swift */; };
 		EC20B72A2B828FFB00152DFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B7292B828FFB00152DFF /* SceneDelegate.swift */; };
 		EC20B72C2B828FFB00152DFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20B72B2B828FFB00152DFF /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		7CDF589B2B88150300C7933C /* LCMSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCMSVC.swift; sourceTree = "<group>"; };
+		BA8BA0C32BC89A9D009F01EC /* CaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseModel.swift; sourceTree = "<group>"; };
 		EC20B7242B828FFB00152DFF /* LegalCaseManagementSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegalCaseManagementSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC20B7272B828FFB00152DFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC20B7292B828FFB00152DFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				EC5069182BB6463800DC108B /* ResetPasswordVC.swift */,
 				EC6013272B9ABA2300FB0E76 /* LoginVC.swift */,
 				EC20B72D2B828FFB00152DFF /* Main.storyboard */,
+				BA8BA0C32BC89A9D009F01EC /* CaseModel.swift */,
 				EC6013312B9AD0CB00FB0E76 /* MatterVC.swift */,
 				EC60132F2B9AC83600FB0E76 /* ProfileScoreVC.swift */,
 				EC60132D2B9AC7FD00FB0E76 /* ReportsVC.swift */,
@@ -327,6 +330,7 @@
 				EC20B72C2B828FFB00152DFF /* ViewController.swift in Sources */,
 				EC60132C2B9AC17900FB0E76 /* PartyVC.swift in Sources */,
 				EC60132E2B9AC7FD00FB0E76 /* ReportsVC.swift in Sources */,
+				BA8BA0C42BC89A9D009F01EC /* CaseModel.swift in Sources */,
 				EC6013302B9AC83600FB0E76 /* ProfileScoreVC.swift in Sources */,
 				EC5069192BB6463800DC108B /* ResetPasswordVC.swift in Sources */,
 				EC60132A2B9AC11B00FB0E76 /* DashboardVC.swift in Sources */,
