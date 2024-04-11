@@ -30,7 +30,7 @@ class ProfileScoreVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if(partyName.text==null){
+        if(partyName.text==""){
             gender.isEnabled=false
             dateofbirth.isEnabled=false
             ssn.isEnabled=false

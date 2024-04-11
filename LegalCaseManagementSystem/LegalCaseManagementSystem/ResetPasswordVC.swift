@@ -43,15 +43,15 @@ class ResetPasswordVC: UIViewController {
     }
     
     
-   let emailID = emailTF.text
-    let if(emailID == 0){
-        emailTF.placeholder = "enter your email"
-        repassworTF.isEnabled = false
-    }
-     else
-     {
-         repassworTF.isEnabled = true
-     }
+//   let emailID = emailTF.text
+//    let if(emailID == 0){
+//        emailTF.placeholder = "enter your email"
+//        repassworTF.isEnabled = false
+//    }
+//     else
+//     {
+//         repassworTF.isEnabled = true
+//     }
 
 
     /*

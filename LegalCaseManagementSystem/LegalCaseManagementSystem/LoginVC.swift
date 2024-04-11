@@ -9,7 +9,8 @@ import UIKit
 import AnimatedGradientView
 import AVFoundation
 import Lottie
-import FirebaseAuth
+import Firebase
+
 
 class LoginVC: UIViewController {
     
@@ -75,14 +76,14 @@ class LoginVC: UIViewController {
                 guard let emailID = usernameTF.text else { return }
                 guard let pswrd = passwordTF.text else { return  }
                 
-                Auth.auth().signIn(withEmail: emailID, password: pswrd){ [weak self] authResult, error in
-                    guard self != nil else { return }
-                    if let error = error {
-                        print("Login failed:", error.localizedDescription)
-                        self?.messageLBL.text = "Invalid Login Credentials! Please try again."
-                        return
-                    }
-                    self?.performSegue(withIdentifier: "loginToProducts", sender: nil)
+//                Auth.auth().signIn(withEmail: emailID, password: pswrd){ [weak self] authResult, error in
+//                    guard self != nil else { return }
+//                    if let error = error {
+//                        print("Login failed:", error.localizedDescription)
+//                        self?.messageLBL.text = "Invalid Login Credentials! Please try again."
+//                        return
+//                    }
+//                    self?.performSegue(withIdentifier: "loginToProducts", sender: nil)
                 }
         
         

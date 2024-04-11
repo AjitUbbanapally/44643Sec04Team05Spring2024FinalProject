@@ -96,24 +96,23 @@ class MatterVC: FormViewController {
 }
 
 
-extension ViewController: UITableViewDelegate,UITableViewDataSource{
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("you selected one of the cell")
-    }
+//extension ViewController: UITableViewDelegate,UITableViewDataSource{
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print("you selected one of the cell")
+//    }
+//    
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        
+//        return client.count
+//    }
+//    
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = ClientTableView.dequeueReusableCell(withIdentifier: ClientCell, for: <#T##IndexPath#>)
+//        cell.textLabel?.text = client[indexPath.row]
+//        return cell
+//    }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return client.count
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = ClientTableView.dequeueReusableCell(withIdentifier: ClientCell, for: <#T##IndexPath#>)
-        cell.textLabel?.text = client[indexPath.row]
-        return cell
-    }
-    
-    
-}
 
 
 

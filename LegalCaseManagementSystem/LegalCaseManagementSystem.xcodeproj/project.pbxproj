@@ -117,7 +117,6 @@
 		EC20B71B2B828FFB00152DFF = {
 			isa = PBXGroup;
 			children = (
-				7CDF589B2B88150300C7933C /* LCMSVC.swift */,
 				EC20B7262B828FFB00152DFF /* LegalCaseManagementSystem */,
 				EC20B73D2B828FFE00152DFF /* LegalCaseManagementSystemTests */,
 				EC20B7472B828FFE00152DFF /* LegalCaseManagementSystemUITests */,
@@ -141,6 +140,7 @@
 				EC20B7272B828FFB00152DFF /* AppDelegate.swift */,
 				EC20B7292B828FFB00152DFF /* SceneDelegate.swift */,
 				EC20B72B2B828FFB00152DFF /* ViewController.swift */,
+				7CDF589B2B88150300C7933C /* LCMSVC.swift */,
 				EC5069182BB6463800DC108B /* ResetPasswordVC.swift */,
 				EC6013272B9ABA2300FB0E76 /* LoginVC.swift */,
 				EC20B72D2B828FFB00152DFF /* Main.storyboard */,
