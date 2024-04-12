@@ -103,9 +103,9 @@ class SignUpVC: UIViewController {
             return false
         }
         
-        if(self.password.text!.count <= 6 || self.password.text!.count > 10 ) {
+        if(self.password.text!.count <= 5 || self.password.text!.count > 10 ) {
             
-             showAlerOnTop(message: "Password  length shoud be 5 to 10")
+             showAlerOnTop(message: "Password  length shoud be 6 to 10")
             return false
         }
         
