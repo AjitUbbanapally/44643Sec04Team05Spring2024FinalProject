@@ -1,9 +1,4 @@
-//
-//  CustomTableViewCell.swift
-//  LMCS
-//
-//  Created by Macbook-Pro on 04/04/24.
-//
+
 
 import UIKit
 

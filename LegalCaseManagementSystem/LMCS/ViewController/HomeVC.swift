@@ -1,9 +1,3 @@
-//
-//  HomeVC.swift
-//  LMCS
-//
-//  Created Created by ajit hk on 04/04/24.
-//
 
 import UIKit
 
