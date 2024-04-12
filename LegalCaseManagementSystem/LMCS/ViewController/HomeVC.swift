@@ -2,7 +2,7 @@
 //  HomeVC.swift
 //  LMCS
 //
-//  Created by Macbook-Pro on 04/04/24.
+//  Created Created by ajit hk on 04/04/24.
 //
 
 import UIKit
@@ -29,7 +29,7 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let item1 = ImageTitleItem(image: UIImage(named: "party")!, title: .Parties)
+        let item1 = ImageTitleItem(image: UIImage(named: "Parties")!, title: .Parties)
         let item2 = ImageTitleItem(image: UIImage(named: "matters")!, title: .Matters)
         let item3 = ImageTitleItem(image: UIImage(named: "report")!, title: .Reports)
         let item4 = ImageTitleItem(image: UIImage(named: "score")!, title: .ProfileScore)
