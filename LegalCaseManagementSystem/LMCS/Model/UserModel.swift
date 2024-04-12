@@ -1,9 +1,3 @@
-//
-//  UserModel.swift
-//  StudentInformationExchange
-//
-//  Created by Macbook-Pro on 21/11/23.
-//
 
 import Foundation
 

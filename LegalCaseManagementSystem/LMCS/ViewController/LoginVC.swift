@@ -16,23 +16,23 @@ class LoginVC: UIViewController {
     @IBOutlet var rememberMeButton: UIButton!
     
     
-    @IBOutlet weak var launchLAV: LottieAnimationView!
-    
-    {
-        didSet {
-            
-            launchLAV.animation = LottieAnimation.named("Legal lottie")
-            launchLAV.alpha=1
-            
-            launchLAV.play{[weak self] _ in
-                UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 1, delay: 0.0, options: [.curveEaseInOut]){
-                    self?.launchLAV.alpha = 0.0
-                    
-                }
-            }
-        }
-        
-    }
+//    @IBOutlet weak var launchLAV: LottieAnimationView!
+//    
+//    {
+//        didSet {
+//            
+//            launchLAV.animation = LottieAnimation.named("Legal lottie")
+//            launchLAV.alpha=1
+//            
+//            launchLAV.play{[weak self] _ in
+//                UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 1, delay: 0.0, options: [.curveEaseInOut]){
+//                    self?.launchLAV.alpha = 0.0
+//                    
+//                }
+//            }
+//        }
+//        
+//    }
     
     var rememberMe: Bool = false
     

@@ -38,7 +38,7 @@
         <scene sceneID="HbW-KW-tta">
             <objects>
                 <viewController storyboardIdentifier="LoginVC" id="k9N-Wz-oRa" customClass="LoginVC" customModule="LMCS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uRt-m9-8UC" userLabel="launchLAV" customClass="LottieAnimationView" customModule="Lottie">
+                    <view key="view" contentMode="scaleToFill" id="uRt-m9-8UC" userLabel="launchLAV">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -268,7 +268,6 @@
                     <navigationItem key="navigationItem" title="LMCS" id="0Rm-fr-tRu"/>
                     <connections>
                         <outlet property="email" destination="dqQ-8b-zHc" id="96w-9P-1zO"/>
-                        <outlet property="launchLAV" destination="uRt-m9-8UC" id="iOL-9U-Olu"/>
                         <outlet property="password" destination="XeX-EI-9pl" id="Sts-OF-FUP"/>
                         <outlet property="rememberMeButton" destination="Vti-U6-G0t" id="sG9-Rv-JZz"/>
                     </connections>
