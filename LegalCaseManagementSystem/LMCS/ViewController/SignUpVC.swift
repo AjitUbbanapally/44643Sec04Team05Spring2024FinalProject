@@ -103,11 +103,7 @@ class SignUpVC: UIViewController {
             return false
         }
         
-        if(self.password.text!.count < 5 || self.password.text!.count > 10 ) {
-            
-             showAlerOnTop(message: "Password  length shoud be 5 to 10")
-            return false
-        }
+        
         
         if(self.userType.text!.isEmpty) {
              showAlerOnTop(message: "Please enter user type.")
