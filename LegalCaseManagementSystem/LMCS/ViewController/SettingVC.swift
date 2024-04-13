@@ -145,11 +145,14 @@ extension SettingVC {
             let toolbar = UIToolbar();
             toolbar.sizeToFit()
             
-            let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.doneHolydatePicker))
-            doneButton.tintColor = .black
+            
+            
             let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
             let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(self.cancelDatePicker))
             cancelButton.tintColor = .black
+            let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.doneHolydatePicker))
+            doneButton.tintColor = .black
+            
             toolbar.setItems([cancelButton,spaceButton,doneButton], animated: false)
             
             // add toolbar to textField
@@ -158,6 +161,9 @@ extension SettingVC {
             dob.inputView = datePicker
             
         }
+    @objc func cancelDatePicker() {
+        self.view.endEditing(true)
+    }
         
         @objc func doneHolydatePicker() {
             //For date formate
@@ -168,8 +174,6 @@ extension SettingVC {
             self.view.endEditing(true)
         }
         
-        @objc func cancelDatePicker() {
-            self.view.endEditing(true)
-        }
+      
 
 }
