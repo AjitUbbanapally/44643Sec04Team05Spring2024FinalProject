@@ -178,12 +178,21 @@ In landscape and portrait view entire information would be displayed with a prov
 - User can reset his passsword using email ID
 - Reset page is part of the UI Navigation View
 
- ### Predict score page
-- Working on Machine learning model so as to train the model for predicting the profile scores based on past data.
-
-
 ### Eureka framework
 - added some components from Eureka Pachkage into Matter view page
+
+### configured calender 
+- The user can enter ones Date of birth using a scroll through option
+
+ ### Predict score page
+- Working on Machine learning model so as to train the model for predicting the profile scores based on past data.
+- The input attributes used to train the machine learning model have been decided based on which the profile score would be computed and decision would be made whether to accept the case or not.
+
+### Split view Integration
+Right after successful login , in the split view various options would be available using which the legal advisor can navigfate through to the corresponding page.
+
+
+
 
 
 
