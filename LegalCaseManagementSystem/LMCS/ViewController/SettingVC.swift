@@ -112,26 +112,7 @@ class SettingVC: UIViewController {
     }
     
     
-    func getProfileData(){
-        FireStoreManager.shared.dbRef.document(UserDefaultsManager.shared.getDocumentId()).getDocument { (document, error) in
-            if let error = error {
-                
-            } else {
-                if let document = document, document.exists {
-                    if let data = document.data() {
-                       // self.userData = data
-                        self.name.text = data["name"] as? String ?? ""
-                        self.phone.text = data["phone"] as? String ?? ""
-                        self.barId.text = data["barId"] as? String ?? ""
-                        self.userType.text = data["userType"] as? String ?? ""
-                        self.dob.text = data["dob"] as? String ?? ""
-                    }
-                } else {
-                    print("Document does not exist")
-                }
-            }
-        }
-    }
+    
 }
 
 
@@ -173,6 +154,34 @@ extension SettingVC {
             //dismiss date picker dialog
             self.view.endEditing(true)
         }
+    //
+    func fetchProfile(completion: @escaping (Result<Profile, Error>) -> Void) {
+        guard let url = URL(string: "https://yourapi.com/profile") else {
+            completion(.failure(NSError(domain: "Invalid URL", code: 0, userInfo: nil)))
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            
+            // Check if data was received
+            guard let data = data else {
+                completion(.failure(NSError(domain: "No data received", code: 1, userInfo: nil)))
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                let profile = try decoder.decode(Profile.self, from: data)
+                completion(.success(profile))
+            } catch {
+                completion(.failure(error))
+            }
+        }.resume()
+    }
         
       
 
