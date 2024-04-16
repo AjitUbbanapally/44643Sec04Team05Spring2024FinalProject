@@ -1,6 +1,7 @@
 
 
 import UIKit
+import AVFoundation
 
 class SettingVC: UIViewController {
     @IBOutlet weak var name: UITextField!
@@ -72,6 +73,7 @@ class SettingVC: UIViewController {
 //    }
     
     @IBAction func onLogout(_ sender: Any) {
+        AudioServicesPlaySystemSound(SystemSoundID(1104))
         UserDefaultsManager.shared.clearUserDefaults()
         UserDefaults.standard.removeObject(forKey: "documentId")
         SceneDelegate.shared!.loginCheckOrRestart()
