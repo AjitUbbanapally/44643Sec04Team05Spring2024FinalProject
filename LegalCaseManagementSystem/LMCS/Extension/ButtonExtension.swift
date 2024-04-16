@@ -1,8 +1,4 @@
-//
-//  ButtonExtension.swift
-//  Online Diagnosis
-//
-//
+
 
 import UIKit
 

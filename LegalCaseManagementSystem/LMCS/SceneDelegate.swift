@@ -1,9 +1,3 @@
-//
-//  SceneDelegate.swift
-//  StudentInformationExchange
-//
-//  Created by Macbook-Pro on 20/11/23.
-//
 
 import UIKit
 
@@ -29,9 +23,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if isLoggedIn {
          
-            let homeVC = storyboard.instantiateViewController(withIdentifier: "DashboardNavigation")
-            window!.rootViewController = homeVC
-          
+            let splitVC = storyboard.instantiateViewController(withIdentifier: "SplitViewController") as! UISplitViewController
+            window!.rootViewController = splitVC
+
         } else {
 
             let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginNavigation")
@@ -42,8 +36,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        SceneDelegate.shared = self
         self.myScene = scene
-        self.loginCheckOrRestart()
+
+      //  self.loginCheckOrRestart()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

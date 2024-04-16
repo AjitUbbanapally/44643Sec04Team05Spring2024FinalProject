@@ -1,4 +1,5 @@
 
+
 import UIKit
 
 class SignUpVC: UIViewController {
@@ -97,9 +98,9 @@ class SignUpVC: UIViewController {
             return false
         }
         
-        if(self.password.text!.count <= 5 || self.password.text!.count > 10 ) {
+        if(self.password.text!.count < 5 || self.password.text!.count > 10 ) {
             
-             showAlerOnTop(message: "Password  length shoud be 6 to 10")
+             showAlerOnTop(message: "Password  length shoud be 5 to 10")
             return false
         }
         
@@ -112,6 +113,7 @@ class SignUpVC: UIViewController {
              showAlerOnTop(message: "Please enter bar id.")
             return false
         }
+        
         if !isValidCode(self.barId.text ?? ""){
             showAlerOnTop(message: "Please enter valid bar id.")
            return false

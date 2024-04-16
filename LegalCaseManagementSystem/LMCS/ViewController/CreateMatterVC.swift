@@ -2,26 +2,49 @@
 
 import UIKit
 
-class CreateMatterVC: UIViewController {
+class CreateMatterVC: UIViewController, UITextViewDelegate {
     @IBOutlet weak var dateOfIncidentTxt: UITextField!
     @IBOutlet weak var caseTypeTxt: UITextField!
-    @IBOutlet weak var caseDescriptionTxtView: UITextField!
+    @IBOutlet weak var caseDescriptionTxtView: UITextView!
     @IBOutlet weak var statuteOfLimitationsDateTxt: UITextField!
     @IBOutlet weak var matterValueTxt: UITextField!
     @IBOutlet weak var attorneyFeesTxt: UITextField!
-    @IBOutlet weak var attorneyAssignedPicker: UIPickerView!
-    @IBOutlet weak var paralegalPicker: UIPickerView!
     @IBOutlet weak var courtNameTxt: UITextField!
     @IBOutlet weak var matterIdTxt: UITextField!
     @IBOutlet weak var caseTitleTxt: UITextField!
     @IBOutlet weak var partyNameTxt: UITextField!
-
+    var globalPicker = GlobalPicker()
     let datePicker = UIDatePicker()
-    
+    var partyDocumentId = ""
+    var partyName = ""
+
+    let caseTypes = [
+        "Accident Case",
+        "Robbery Case",
+        "Assault Case",
+        "Fraud Case",
+        "Property Damage Case",
+        "Medical Malpractice Case",
+        "Contract Dispute Case",
+        "Employment Discrimination Case",
+        "Personal Injury Case",
+        "Product Liability Case",
+        "Environmental Law Case",
+        "Divorce Case",
+        "Child Custody Case",
+        "Estate Planning Case",
+        "Bankruptcy Case",
+        "Criminal Defense Case",
+        "Intellectual Property Case",
+        "Insurance Claim Case",
+        "Real Estate Dispute Case",
+        "Civil Rights Case",
+        "Tax Law Case"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.partyNameTxt.text = self.partyName
         datePicker.maximumDate = Date()
         self.dateOfIncidentTxt.inputView =  datePicker
         self.statuteOfLimitationsDateTxt.inputView = datePicker
@@ -37,22 +60,38 @@ class CreateMatterVC: UIViewController {
                 statuteOfLimitationsDate: statuteOfLimitationsDateTxt.text ?? "",
                 matterValue: matterValueTxt.text ?? "",
                 attorneyFees: attorneyFeesTxt.text ?? "0.0",
-                attorneyAssigned: "", // You'll need to set these values based on the pickers
-                paralegal: "",        // You'll need to set these values based on the pickers
                 courtName: courtNameTxt.text ?? "",
                 matterId: matterIdTxt.text  ?? "",
                 caseTitle: caseTitleTxt.text ?? "",
-                partyName: partyNameTxt.text ?? "",
-                userId: UserDefaultsManager.shared.getDocumentId()
+                partyName: partyName,
+                userId: UserDefaultsManager.shared.getDocumentId(),
+                partyId: partyDocumentId
             )
             
             FireStoreManager.shared.addCaseToFirestore(caseDetails) { success in
                 if success{
                     showAlertView(message: "Case matter created successfully")
-                    self.navigationController?.popViewController(animated: true)
+                    
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier:  "MatterListVC" ) as! MatterListVC
+                    self.navigationController?.pushViewController(vc, animated: true)
                 }
             }
         }
+    }
+    
+    
+    @IBAction func onCaseType(_ sender: Any) {
+                    
+        var locationKey = ""
+        self.globalPicker.stringArray = self.caseTypes
+        
+        self.globalPicker.modalPresentationStyle = .overCurrentContext
+        self.globalPicker.onDone = { [self] index in
+          locationKey =  globalPicker.stringArray[index]
+            self.caseTypeTxt.text = locationKey
+        }
+        self.present(self.globalPicker, animated: true, completion: nil)
+        
     }
     
     func validateFields() -> Bool {
@@ -157,3 +196,19 @@ extension CreateMatterVC {
 
 
 
+extension CreateMatterVC{
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if caseDescriptionTxtView.text == "Case Description" {
+            caseDescriptionTxtView.text = ""
+            caseDescriptionTxtView.textColor = UIColor.black
+        }
+        
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if caseDescriptionTxtView.text == "" {
+            caseDescriptionTxtView.text = "Case Description"
+            caseDescriptionTxtView.textColor = UIColor.lightGray
+        }
+    }
+}

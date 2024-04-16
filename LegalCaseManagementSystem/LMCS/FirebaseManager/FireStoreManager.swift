@@ -79,8 +79,9 @@ class FireStoreManager {
 
                            let name = document.data()["name"] as? String ?? ""
                            let email = document.data()["email"] as? String ?? ""
-                           
-                           UserDefaultsManager.shared.saveData(name: name, email: email)
+                           let phone = document.data()["phone"] as? String ?? ""
+
+                           UserDefaultsManager.shared.saveData(name: name, email: email, phone: phone)
                            completion(true)
 
                        }else {
@@ -219,6 +220,7 @@ class FireStoreManager {
                     let matterId = data["matterId"] as? String ?? ""
                     let caseTitle = data["caseTitle"] as? String ?? ""
                     let partyName = data["partyName"] as? String ?? ""
+                    let partyId = data["partyId"] as? String ?? ""
                     let userId = UserDefaultsManager.shared.getDocumentId()
 
                     let caseDetail = CaseDetails(dateOfIncident: dateOfIncident,
@@ -227,13 +229,11 @@ class FireStoreManager {
                                                  statuteOfLimitationsDate: statuteOfLimitationsDate,
                                                  matterValue: matterValue,
                                                  attorneyFees: attorneyFees,
-                                                 attorneyAssigned: "", // Set these values based on pickers
-                                                 paralegal: "",        // Set these values based on pickers
                                                  courtName: courtName,
                                                  matterId: matterId,
                                                  caseTitle: caseTitle,
                                                  partyName: partyName,
-                                                 userId: userId)
+                                                 userId: userId, partyId: partyId)
 
                     caseDetailsArray.append(caseDetail)
                     completion(caseDetailsArray)
@@ -242,6 +242,76 @@ class FireStoreManager {
                 print(caseDetailsArray)
             }
         }
+
+    func fetchPartyDetails(completion: @escaping ([PartyDetails]) -> Void) {
+        let casesRef = db.collection("PartyList")
+
+        casesRef.getDocuments { (snapshot, error) in
+            if let error = error {
+                print("Error fetching documents: \(error)")
+                completion([])
+                return
+            }
+
+            var partyDetailsArray = [PartyDetails]()
+
+            guard let documents = snapshot?.documents else {
+                print("No documents found.")
+                completion([])
+                return
+            }
+
+            for document in documents {
+                let data = document.data()
+
+                if var partyDetails = try? Firestore.Decoder().decode(PartyDetails.self, from: data) {
+                    // Set the documentID property of the partyDetails object
+                    partyDetails.documentID = document.documentID
+                    partyDetailsArray.append(partyDetails)
+                } else {
+                    print("Error decoding party details for document ID: \(document.documentID)")
+                }
+            }
+
+            completion(partyDetailsArray)
+        }
+    }
+
+
+    
+    func addProfileScoreToFirestore(_ partyDetails: PartyDetails,completion: @escaping (Bool, String?)->()) {
+        let db = Firestore.firestore()
+        let casesCollection = db.collection("PartyList")
+        
+        do {
+                let caseData = try Firestore.Encoder().encode(partyDetails)
+                
+                casesCollection.addDocument(data: caseData) { error in
+                    if let error = error {
+                        print("Error adding case: \(error)")
+                        completion(false, nil)
+                    } else {
+                        // Retrieve the newly added document and its document ID
+                        casesCollection.whereField("partyName", isEqualTo: partyDetails.partyName).getDocuments { snapshot, error in
+                            if let error = error {
+                                print("Error retrieving document: \(error)")
+                                completion(false, nil)
+                            } else if let document = snapshot?.documents.first {
+                                let documentID = document.documentID
+                                completion(true, documentID)
+                                print("Case added successfully with document ID: \(documentID)")
+                            } else {
+                                completion(false, nil)
+                                print("Failed to retrieve document ID.")
+                            }
+                        }
+                    }
+                }
+            } catch {
+                completion(false, nil)
+                print("Error encoding case data: \(error)")
+            }
+    }
     
     func updateProfile(documentid:String, user: UserRegistrationModel ,completion: @escaping (Bool)->()) {
         let  query = db.collection("Users").document(documentid)

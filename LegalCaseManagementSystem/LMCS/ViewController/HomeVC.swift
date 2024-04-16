@@ -1,4 +1,5 @@
 
+
 import UIKit
 
 enum ItemTitle: String {
@@ -23,7 +24,7 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let item1 = ImageTitleItem(image: UIImage(named: "Parties")!, title: .Parties)
+        let item1 = ImageTitleItem(image: UIImage(named: "party")!, title: .Parties)
         let item2 = ImageTitleItem(image: UIImage(named: "matters")!, title: .Matters)
         let item3 = ImageTitleItem(image: UIImage(named: "report")!, title: .Reports)
         let item4 = ImageTitleItem(image: UIImage(named: "score")!, title: .ProfileScore)

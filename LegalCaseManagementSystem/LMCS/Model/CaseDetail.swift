@@ -9,13 +9,12 @@ struct CaseDetails: Codable {
     var statuteOfLimitationsDate: String
     var matterValue: String
     var attorneyFees: String
-    var attorneyAssigned: String
-    var paralegal: String
     var courtName: String
     var matterId: String
     var caseTitle: String
     var partyName: String
     var userId: String
+    var partyId: String
 
     enum CodingKeys: String, CodingKey {
         case dateOfIncident
@@ -24,13 +23,12 @@ struct CaseDetails: Codable {
         case statuteOfLimitationsDate
         case matterValue
         case attorneyFees
-        case attorneyAssigned
-        case paralegal
         case courtName
         case matterId
         case caseTitle
         case partyName
         case userId
+        case partyId
     }
 
     func encode(to encoder: Encoder) throws {
@@ -41,12 +39,11 @@ struct CaseDetails: Codable {
         try container.encode(statuteOfLimitationsDate, forKey: .statuteOfLimitationsDate)
         try container.encode(matterValue, forKey: .matterValue)
         try container.encode(attorneyFees, forKey: .attorneyFees)
-        try container.encode(attorneyAssigned, forKey: .attorneyAssigned)
-        try container.encode(paralegal, forKey: .paralegal)
         try container.encode(courtName, forKey: .courtName)
         try container.encode(matterId, forKey: .matterId)
         try container.encode(caseTitle, forKey: .caseTitle)
         try container.encode(userId, forKey: .userId)
         try container.encode(partyName, forKey: .partyName)
+        try container.encode(partyId, forKey: .partyId)
     }
 }

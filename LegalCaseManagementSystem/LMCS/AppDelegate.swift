@@ -1,9 +1,3 @@
-//
-//  AppDelegate.swift
-//  LMCS
-//
-//  Created by Macbook-Pro on 03/04/24.
-//
 
 import UIKit
 import Firebase

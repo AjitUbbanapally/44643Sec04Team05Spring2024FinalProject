@@ -13,6 +13,18 @@ class MatterListVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         self.tableView.delegate = self
         self.tableView.dataSource = self
 
+        setupMenuButton()
+    }
+    
+    func setupMenuButton() {
+        let menuButton = UIBarButtonItem(image: UIImage(systemName: "list.bullet"), style: .plain, target: self, action: #selector(menuButtonTapped))
+        navigationItem.leftBarButtonItem = menuButton
+        navigationItem.leftBarButtonItem?.tintColor = .black
+    }
+    
+    @objc func menuButtonTapped() {
+        guard let splitViewController = splitViewController else { return }
+        SplitViewControllerUtility.toggleMasterView(for: splitViewController)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,6 +66,14 @@ extension MatterListVC {
         cell.setData(matterIdTxt: caseData.matterId, caseTitleTxt: caseData.caseTitle, partyNameTxt: caseData.partyName, caseTypeTxt: caseData.caseType, matterValueTxt: caseData.matterValue, dateOfIncidentTxt: caseData.dateOfIncident)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = caseData[indexPath.row]
+        let vc = self.storyboard?.instantiateViewController(withIdentifier:  "MatterDetailVC" ) as! MatterDetailVC
+        vc.caseData = data
+        self.navigationController?.pushViewController(vc, animated: true)
+
     }
 
 }

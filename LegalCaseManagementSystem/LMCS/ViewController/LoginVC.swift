@@ -1,38 +1,12 @@
-//
-//  LoginVC.swift
-//
-//
-//  Created by ajit hk 
-//
+
 
 import UIKit
-import Lottie
-
 
 class LoginVC: UIViewController {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var loggg: UILabel!
     @IBOutlet var rememberMeButton: UIButton!
-    
-    
-//    @IBOutlet weak var launchLAV: LottieAnimationView!
-//    
-//    {
-//        didSet {
-//            
-//            launchLAV.animation = LottieAnimation.named("Legal lottie")
-//            launchLAV.alpha=1
-//            
-//            launchLAV.play{[weak self] _ in
-//                UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 1, delay: 0.0, options: [.curveEaseInOut]){
-//                    self?.launchLAV.alpha = 0.0
-//                    
-//                }
-//            }
-//        }
-//        
-//    }
     
     var rememberMe: Bool = false
     
@@ -50,15 +24,15 @@ class LoginVC: UIViewController {
         rememberMe = rememberMeButton.isSelected
         
         if rememberMe {
-            print("User wants the credentials to be stored for faster access.")
+            print("User wants to be remembered.")
         } else {
             print("User does not want to be remembered.")
         }
     }
     
-    @IBAction func onLoggingIn(_ sender: Any) {
+    @IBAction func onLogin(_ sender: Any) {
         if(email.text!.isEmpty) {
-            showAlerOnTop(message: "Please enter your valid email id.")
+            showAlerOnTop(message: "Please enter your email id.")
             return
         }
         
@@ -87,8 +61,5 @@ class LoginVC: UIViewController {
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
-    
     
 }

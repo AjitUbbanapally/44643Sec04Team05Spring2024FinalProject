@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8033E35A2BC96DC300C50362 /* SplitViewControllerUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8033E3592BC96DC300C50362 /* SplitViewControllerUtility.swift */; };
+		8033E35E2BC9715B00C50362 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8033E35D2BC9715B00C50362 /* SplashVC.swift */; };
+		8033E3632BC973BB00C50362 /* Animation - 1712929804438.json in Resources */ = {isa = PBXBuildFile; fileRef = 8033E3622BC973BB00C50362 /* Animation - 1712929804438.json */; };
+		8033E3652BC987EE00C50362 /* PartyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8033E3642BC987EE00C50362 /* PartyDetail.swift */; };
+		8033E3672BC9BB1500C50362 /* PartyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8033E3662BC9BB1500C50362 /* PartyTableViewCell.swift */; };
+		8033E3692BC9C3DB00C50362 /* MatterDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8033E3682BC9C3DB00C50362 /* MatterDetailVC.swift */; };
 		805D17D82BBEE3C9008BD46A /* PartyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805D17D72BBEE3C9008BD46A /* PartyVC.swift */; };
 		805D17DC2BBEE3F1008BD46A /* ReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805D17DB2BBEE3F1008BD46A /* ReportVC.swift */; };
 		805D17DE2BBEE5E1008BD46A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805D17DD2BBEE5E1008BD46A /* CustomTableViewCell.swift */; };
@@ -59,10 +65,16 @@
 		80ACBA3E2BBDE1FA00B8F54B /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ACBA3D2BBDE1FA00B8F54B /* CustomCollectionViewCell.swift */; };
 		80ACBA402BBED5B800B8F54B /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ACBA3F2BBED5B800B8F54B /* SettingVC.swift */; };
 		80ACBA422BBED62600B8F54B /* ProfileScoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ACBA412BBED62600B8F54B /* ProfileScoreVC.swift */; };
-		ECA374152BC98D3E00B828ED /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = ECA374142BC98D3E00B828ED /* Lottie */; };
+		BA4BD4D62BCE461300F9E42B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = BA4BD4D52BCE461300F9E42B /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8033E3592BC96DC300C50362 /* SplitViewControllerUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewControllerUtility.swift; sourceTree = "<group>"; };
+		8033E35D2BC9715B00C50362 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		8033E3622BC973BB00C50362 /* Animation - 1712929804438.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Animation - 1712929804438.json"; sourceTree = "<group>"; };
+		8033E3642BC987EE00C50362 /* PartyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyDetail.swift; sourceTree = "<group>"; };
+		8033E3662BC9BB1500C50362 /* PartyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyTableViewCell.swift; sourceTree = "<group>"; };
+		8033E3682BC9C3DB00C50362 /* MatterDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatterDetailVC.swift; sourceTree = "<group>"; };
 		805D17D72BBEE3C9008BD46A /* PartyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyVC.swift; sourceTree = "<group>"; };
 		805D17DB2BBEE3F1008BD46A /* ReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportVC.swift; sourceTree = "<group>"; };
 		805D17DD2BBEE5E1008BD46A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -124,7 +136,7 @@
 				805D18352BBF2E7B008BD46A /* FirebaseStorage in Frameworks */,
 				805D182B2BBF2E7B008BD46A /* FirebaseDatabase in Frameworks */,
 				805D18292BBF2E7B008BD46A /* FirebaseAuth in Frameworks */,
-				ECA374152BC98D3E00B828ED /* Lottie in Frameworks */,
+				BA4BD4D62BCE461300F9E42B /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +160,10 @@
 				805D17DF2BBEE77B008BD46A /* PartyDetailVC.swift */,
 				805D17E12BBEEE42008BD46A /* CreateMatterVC.swift */,
 				805D17E32BBEEF6F008BD46A /* MatterListVC.swift */,
+				8033E35D2BC9715B00C50362 /* SplashVC.swift */,
+				8033E3622BC973BB00C50362 /* Animation - 1712929804438.json */,
+				8033E3662BC9BB1500C50362 /* PartyTableViewCell.swift */,
+				8033E3682BC9C3DB00C50362 /* MatterDetailVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -168,6 +184,7 @@
 				805D17F72BBF273E008BD46A /* CaseDetail.swift */,
 				805D17F82BBF273E008BD46A /* HomeModel.swift */,
 				805D17F92BBF273E008BD46A /* UserModel.swift */,
+				8033E3642BC987EE00C50362 /* PartyDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +199,7 @@
 				805D18012BBF2756008BD46A /* Extensions.swift */,
 				805D183A2BC015E4008BD46A /* GlobalPicker.swift */,
 				805D183C2BC02B13008BD46A /* Color.swift */,
+				8033E3592BC96DC300C50362 /* SplitViewControllerUtility.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -304,7 +322,7 @@
 				805D18302BBF2E7B008BD46A /* FirebaseFirestoreSwift */,
 				805D18322BBF2E7B008BD46A /* FirebaseMessaging */,
 				805D18342BBF2E7B008BD46A /* FirebaseStorage */,
-				ECA374142BC98D3E00B828ED /* Lottie */,
+				BA4BD4D52BCE461300F9E42B /* Lottie */,
 			);
 			productName = LMCS;
 			productReference = 80ACBA222BBDD70800B8F54B /* LMCS.app */;
@@ -336,7 +354,7 @@
 			mainGroup = 80ACBA192BBDD70800B8F54B;
 			packageReferences = (
 				805D18242BBF27DF008BD46A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				ECA374132BC98D3E00B828ED /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				BA4BD4D42BCE461300F9E42B /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 80ACBA232BBDD70800B8F54B /* Products */;
 			projectDirPath = "";
@@ -354,6 +372,7 @@
 			files = (
 				805D18232BBF277C008BD46A /* MapKitSearchViewController.xib in Resources */,
 				80ACBA2F2BBDD70900B8F54B /* Assets.xcassets in Resources */,
+				8033E3632BC973BB00C50362 /* Animation - 1712929804438.json in Resources */,
 				805D181D2BBF277C008BD46A /* MapItemTableViewCell.xib in Resources */,
 				805D18212BBF277C008BD46A /* Material.xcassets in Resources */,
 				805D18372BC00B68008BD46A /* GoogleService-Info.plist in Resources */,
@@ -374,9 +393,11 @@
 				80ACBA3C2BBDE1E200B8F54B /* CollectionViewFlowLayout.swift in Sources */,
 				805D18392BC0149E008BD46A /* UIViewControllerExt.swift in Sources */,
 				80ACBA402BBED5B800B8F54B /* SettingVC.swift in Sources */,
+				8033E35A2BC96DC300C50362 /* SplitViewControllerUtility.swift in Sources */,
 				80ACBA3E2BBDE1FA00B8F54B /* CustomCollectionViewCell.swift in Sources */,
 				805D17E02BBEE77B008BD46A /* PartyDetailVC.swift in Sources */,
 				80ACBA3A2BBDE05F00B8F54B /* HomeVC.swift in Sources */,
+				8033E35E2BC9715B00C50362 /* SplashVC.swift in Sources */,
 				805D17F52BBF2729008BD46A /* ForgetPasswordManager.swift in Sources */,
 				805D183B2BC015E5008BD46A /* GlobalPicker.swift in Sources */,
 				805D17FB2BBF273E008BD46A /* CaseDetail.swift in Sources */,
@@ -401,12 +422,15 @@
 				805D17F62BBF2729008BD46A /* UserDefaultsManager.swift in Sources */,
 				805D181B2BBF277C008BD46A /* BottomSheetView.swift in Sources */,
 				805D17ED2BBF26F0008BD46A /* SignUpVC.swift in Sources */,
+				8033E3672BC9BB1500C50362 /* PartyTableViewCell.swift in Sources */,
 				805D17F42BBF2729008BD46A /* FireStoreManager.swift in Sources */,
 				805D17FC2BBF273E008BD46A /* HomeModel.swift in Sources */,
+				8033E3692BC9C3DB00C50362 /* MatterDetailVC.swift in Sources */,
 				805D18042BBF2756008BD46A /* ButtonWithShadow.swift in Sources */,
 				805D18052BBF2756008BD46A /* DesignableView.swift in Sources */,
 				805D181C2BBF277C008BD46A /* MapItemTableViewCell.swift in Sources */,
 				805D18062BBF2756008BD46A /* Extensions.swift in Sources */,
+				8033E3652BC987EE00C50362 /* PartyDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,12 +661,12 @@
 				minimumVersion = 10.23.1;
 			};
 		};
-		ECA374132BC98D3E00B828ED /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		BA4BD4D42BCE461300F9E42B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.4.2;
+				minimumVersion = 4.4.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -683,9 +707,9 @@
 			package = 805D18242BBF27DF008BD46A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
 		};
-		ECA374142BC98D3E00B828ED /* Lottie */ = {
+		BA4BD4D52BCE461300F9E42B /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ECA374132BC98D3E00B828ED /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = BA4BD4D42BCE461300F9E42B /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */

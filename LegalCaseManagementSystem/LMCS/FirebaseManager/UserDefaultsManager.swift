@@ -36,6 +36,14 @@ class UserDefaultsManager  {
        print(email)
       return email
    }
+    
+    func getPhone()-> String {
+        
+        let phone = UserDefaults.standard.string(forKey: "Phone") ?? ""
+        
+        print(phone)
+       return phone
+    }
    
    func getName()-> String {
       return UserDefaults.standard.string(forKey: "name") ?? ""
@@ -49,10 +57,11 @@ class UserDefaultsManager  {
       return UserDefaults.standard.string(forKey: "documentId") ?? ""
    }
    
-   func saveData(name:String, email:String) {
+   func saveData(name:String, email:String, phone:String) {
        
        UserDefaults.standard.setValue(name, forKey: "name")
        UserDefaults.standard.setValue(email, forKey: "email")
+       UserDefaults.standard.setValue(phone, forKey: "phone")
    }
  
    func clearData(){
