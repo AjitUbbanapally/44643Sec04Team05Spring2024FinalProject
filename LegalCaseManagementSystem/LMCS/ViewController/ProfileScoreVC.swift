@@ -114,8 +114,14 @@ extension ProfileScoreVC {
             return false
         }
         
+        if(self.ssnTxt.text!.count < 9 || self.ssnTxt.text!.count > 10 ) {
+            
+             showAlerOnTop(message: "SSN  should have 9 digits")
+            return false
+        }
+        
         if caseTypeTxt.text?.isEmpty ?? true {
-            showAlertView(message: "Please enter case type")
+            showAlertView(message: "Please enter the case type")
             return false
         }
         
