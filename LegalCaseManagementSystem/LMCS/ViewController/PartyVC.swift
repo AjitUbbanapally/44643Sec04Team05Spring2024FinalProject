@@ -1,7 +1,6 @@
 
 
 import UIKit
-import AVFoundation
 
 class PartyVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
@@ -62,7 +61,6 @@ extension PartyVC {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        AudioServicesPlaySystemSound(SystemSoundID(1102))
         let data = partyData[indexPath.row]
         let vc = self.storyboard?.instantiateViewController(withIdentifier:  "PartyDetailVC" ) as! PartyDetailVC
         vc.partyData = data

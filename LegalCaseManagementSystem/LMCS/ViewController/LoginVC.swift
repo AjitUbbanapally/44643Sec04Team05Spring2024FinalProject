@@ -1,5 +1,4 @@
 
-
 import UIKit
 import AVFoundation
 
@@ -32,7 +31,7 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func onLogin(_ sender: Any) {
-        AudioServicesPlaySystemSound(SystemSoundID(1104))
+        AudioServicesPlaySystemSound(SystemSoundID(1103))
         if(email.text!.isEmpty) {
             showAlerOnTop(message: "Please enter your email id.")
             return
@@ -53,7 +52,7 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func onSignUp(_ sender: Any) {
-        AudioServicesPlaySystemSound(SystemSoundID(1102))
+        AudioServicesPlaySystemSound(SystemSoundID(1103))
         let vc = self.storyboard?.instantiateViewController(withIdentifier:  "SignUpVC" ) as! SignUpVC
         
         self.navigationController?.pushViewController(vc, animated: true)

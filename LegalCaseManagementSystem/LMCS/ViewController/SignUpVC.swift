@@ -1,5 +1,4 @@
 
-
 import UIKit
 
 class SignUpVC: UIViewController {
@@ -74,13 +73,7 @@ class SignUpVC: UIViewController {
         
 
         if(self.phone.text!.isEmpty) {
-             showAlerOnTop(message: "Please enter phone number")
-            return false
-        }
-        
-        if(self.phone.text!.count < 10 ) {
-            
-             showAlerOnTop(message: "Please Enter valid phone number")
+             showAlerOnTop(message: "Please enter phone.")
             return false
         }
         
@@ -94,8 +87,6 @@ class SignUpVC: UIViewController {
             return false
         }
         
-        
-        
         if(self.confirmPassword.text!.isEmpty) {
              showAlerOnTop(message: "Please enter confirm password.")
             return false
@@ -106,9 +97,9 @@ class SignUpVC: UIViewController {
             return false
         }
         
-        if(self.password.text!.count < 6 || self.password.text!.count > 10 ) {
+        if(self.password.text!.count < 5 || self.password.text!.count > 10 ) {
             
-             showAlerOnTop(message: "Password  length should be between 6 to 10")
+             showAlerOnTop(message: "Password  length shoud be 5 to 10")
             return false
         }
         

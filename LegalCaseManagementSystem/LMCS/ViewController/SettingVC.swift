@@ -1,5 +1,4 @@
 
-
 import UIKit
 import AVFoundation
 
@@ -73,7 +72,7 @@ class SettingVC: UIViewController {
 //    }
     
     @IBAction func onLogout(_ sender: Any) {
-        AudioServicesPlaySystemSound(SystemSoundID(1104))
+        AudioServicesPlaySystemSound(SystemSoundID(1103))
         UserDefaultsManager.shared.clearUserDefaults()
         UserDefaults.standard.removeObject(forKey: "documentId")
         SceneDelegate.shared!.loginCheckOrRestart()

@@ -1,7 +1,6 @@
 
 
 import UIKit
-import AVFoundation
 
 class ForgotPasswordVC: UIViewController {
     @IBOutlet weak var email: UITextField!
@@ -12,7 +11,6 @@ class ForgotPasswordVC: UIViewController {
     }
     
     @IBAction func onSend(_ sender: Any) {
-        AudioServicesPlaySystemSound(SystemSoundID(1104))
         if(email.text!.isEmpty) {
             showAlerOnTop(message: "Please enter your email id.")
             return

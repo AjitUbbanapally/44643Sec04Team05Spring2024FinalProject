@@ -979,7 +979,7 @@
             </objects>
             <point key="canvasLocation" x="5107.6335877862593" y="-2268.3098591549297"/>
         </scene>
-        <!--Profile Score-->
+        <!--Create Party-->
         <scene sceneID="hWN-38-c6D">
             <objects>
                 <viewController storyboardIdentifier="ProfileScoreVC" id="qKW-NY-Us3" customClass="ProfileScoreVC" customModule="LMCS" customModuleProvider="target" sceneMemberID="viewController">
@@ -1009,6 +1009,9 @@
                                                         <integer key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="5xd-BY-nKo" kind="show" id="rzJ-DI-BkV"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ueo-Dr-6FV">
                                                 <rect key="frame" x="15" y="20" width="363" height="610"/>
@@ -1463,7 +1466,7 @@
                             <constraint firstItem="nw9-Vg-0ZF" firstAttribute="trailing" secondItem="3Y3-r5-hfc" secondAttribute="trailing" id="kdN-gs-DqQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Profile Score" id="bYm-K4-Vjz"/>
+                    <navigationItem key="navigationItem" title="Create Party" id="bYm-K4-Vjz"/>
                     <connections>
                         <outlet property="caseTypeTxt" destination="O6w-NI-aDj" id="APQ-jo-txK"/>
                         <outlet property="dateOfBirthTxt" destination="vWg-GS-0s7" id="QoB-ZP-6SZ"/>
@@ -1478,7 +1481,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufS-tx-gI3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6084.7328244274804" y="-1554.2253521126761"/>
+            <point key="canvasLocation" x="6086" y="-1554"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mz0-KT-dfz">
@@ -2106,7 +2109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zck-Ak-pL2" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6974.8091603053435" y="-1554.2253521126761"/>
+            <point key="canvasLocation" x="7767" y="-1554"/>
         </scene>
         <!--Matter-->
         <scene sceneID="Ytj-ef-uC3">
@@ -2274,10 +2277,10 @@
             </objects>
             <point key="canvasLocation" x="2442" y="-1261"/>
         </scene>
-        <!--LCMS-->
+        <!--LMCS-->
         <scene sceneID="hDj-wD-FYC">
             <objects>
-                <tableViewController storyboardIdentifier="DashboardTVC" id="MbX-NX-fiP" customClass="DashboardTVC" customModule="LMCS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DashboardTVC" id="MbX-NX-fiP" userLabel="LMCS" customClass="DashboardTVC" customModule="LMCS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="VlP-Lz-vzb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2399,7 +2402,7 @@
                             <outlet property="delegate" destination="MbX-NX-fiP" id="NU4-aA-r15"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="LCMS" id="gz4-xA-AJk"/>
+                    <navigationItem key="navigationItem" title="Legal App" id="gz4-xA-AJk" userLabel="LMCS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5KG-A5-rWc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2411,7 +2414,7 @@
                 <navigationController id="DO9-Yv-oRq" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Reports" largeTitleDisplayMode="always" style="browser" id="f3Y-Il-AN4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="TWG-Lk-eyJ">
-                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -2430,21 +2433,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWq-G4-zRl">
-                                <rect key="frame" x="138" y="413" width="117" height="26.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uoR-Ib-5cT">
+                                <rect key="frame" x="20" y="123" width="353" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jq3-ta-9Am" customClass="PieChartView" customModule="DGCharts">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="LdN-ef-HmL"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UV2-f7-xP6" customClass="BarChartView" customModule="DGCharts">
+                                        <rect key="frame" x="0.0" y="300" width="353" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="JQD-9h-7Pc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="C54-L1-Xpk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wWq-G4-zRl" firstAttribute="centerY" secondItem="jMv-7W-1QN" secondAttribute="centerY" id="Am9-8q-fRT"/>
-                            <constraint firstItem="wWq-G4-zRl" firstAttribute="centerX" secondItem="jMv-7W-1QN" secondAttribute="centerX" id="yhL-HF-vx9"/>
+                            <constraint firstItem="C54-L1-Xpk" firstAttribute="trailing" secondItem="uoR-Ib-5cT" secondAttribute="trailing" constant="20" id="Ue6-BN-LLQ"/>
+                            <constraint firstItem="C54-L1-Xpk" firstAttribute="bottom" secondItem="uoR-Ib-5cT" secondAttribute="bottom" constant="20" id="lqP-1u-Ajm"/>
+                            <constraint firstItem="uoR-Ib-5cT" firstAttribute="top" secondItem="C54-L1-Xpk" secondAttribute="top" constant="20" id="vZx-Cw-8lA"/>
+                            <constraint firstItem="uoR-Ib-5cT" firstAttribute="leading" secondItem="C54-L1-Xpk" secondAttribute="leading" constant="20" id="xhY-0S-13h"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Report" id="oAE-Sh-SJy"/>
+                    <connections>
+                        <outlet property="barChartView" destination="UV2-f7-xP6" id="3qn-r4-lJy"/>
+                        <outlet property="pieChartView" destination="jq3-ta-9Am" id="gfy-AB-JHQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMT-gm-UJq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3544,9 +3566,25 @@
             </objects>
             <point key="canvasLocation" x="3796" y="18"/>
         </scene>
+        <!--Profile Score-->
+        <scene sceneID="kLw-gh-FBT">
+            <objects>
+                <viewController storyboardIdentifier="CheckScoreProfileVC" modalPresentationStyle="fullScreen" id="5xd-BY-nKo" customClass="CheckScoreProfileVC" customModule="LMCS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gK6-8N-VIN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gVY-6P-Bsv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile Score" id="WBD-03-FN6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ps-sJ-Cac" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6879" y="-1563"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mhi-xk-UpZ"/>
+        <segue reference="wya-gL-M00"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="calendar" catalog="system" width="128" height="107"/>

@@ -1,6 +1,6 @@
 
-
 import UIKit
+import AVFoundation
 
 class ProfileScoreVC: UIViewController {
     @IBOutlet weak var partyNameTxt: UITextField!
@@ -114,14 +114,8 @@ extension ProfileScoreVC {
             return false
         }
         
-        if(self.ssnTxt.text!.count < 9 || self.ssnTxt.text!.count > 10 ) {
-            
-             showAlerOnTop(message: "SSN  should have 9 digits")
-            return false
-        }
-        
         if caseTypeTxt.text?.isEmpty ?? true {
-            showAlertView(message: "Please enter the case type")
+            showAlertView(message: "Please enter case type")
             return false
         }
         
@@ -149,6 +143,7 @@ extension ProfileScoreVC {
     }
 
     @IBAction func clickOnProfileScore(_ sender: Any) {
+        AudioServicesPlaySystemSound(SystemSoundID(1103))
         if validateFields() {
             let partyDetails = PartyDetails(
                 partyName: partyNameTxt.text ?? "",
