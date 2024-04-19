@@ -61,7 +61,6 @@ The Navigation among different screens is as follows :
 - In profile Score option,  the  Admin can provide ones basic details which will help the software compute the profile score. This would form the basis for whether the case would be accepted or not.
 
 ### UI/Prototype
-![UI](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/632dbdad-99e9-4b6b-94df-1a6ec28aae6e)
 ![UI](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/0ab363bb-7c37-4814-bff0-b2f376275c56)
 
 
