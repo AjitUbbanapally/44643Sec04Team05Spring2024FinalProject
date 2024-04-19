@@ -75,7 +75,6 @@ class UserDefaultsManager  {
         UserDefaults.standard.set(true, forKey: getEmail().lowercased() + title.lowercased())
     }
     
-    // Function to get favorites
     func getFavorites(title: String) -> Bool {
         
         return UserDefaults.standard.bool(forKey:  getEmail().lowercased() + title.lowercased())

@@ -11,7 +11,7 @@ class CustomTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
     
     func setData(matterIdTxt:String,caseTitleTxt:String,partyNameTxt:String,caseTypeTxt:String,matterValueTxt:String,dateOfIncidentTxt:String)  {
@@ -28,7 +28,6 @@ class CustomTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
 
 }

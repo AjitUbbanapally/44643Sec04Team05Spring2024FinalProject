@@ -1,5 +1,6 @@
 
 import UIKit
+import AVFoundation
 
 class PartyDetailVC: UIViewController {
     
@@ -35,6 +36,7 @@ class PartyDetailVC: UIViewController {
         vc.partyDocumentId =  partyData?.documentID ?? ""
         vc.partyName = self.partyNameTxt.text ?? ""
         self.navigationController?.pushViewController(vc, animated: true)
+        AudioServicesPlaySystemSound(SystemSoundID(1103))
     }
 
 }

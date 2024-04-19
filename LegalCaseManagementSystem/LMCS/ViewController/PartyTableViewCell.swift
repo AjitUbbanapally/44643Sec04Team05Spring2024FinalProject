@@ -9,7 +9,6 @@ class PartyTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     func setData(numberOfConvictedFeloniesTxt:String,phoneTxt:String,partyNameTxt:String,emailTxt:String)  {
@@ -23,7 +22,6 @@ class PartyTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
 
 }

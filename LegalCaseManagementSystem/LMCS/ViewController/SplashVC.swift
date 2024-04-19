@@ -9,7 +9,7 @@ class SplashVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let lottieView = LottieAnimationView(name: "Animation - 1712929804438")
+        let lottieView = LottieAnimationView(name: "Legallottie")
         lottieView.loopMode = .loop
         lottieView.contentMode = .scaleAspectFit
 

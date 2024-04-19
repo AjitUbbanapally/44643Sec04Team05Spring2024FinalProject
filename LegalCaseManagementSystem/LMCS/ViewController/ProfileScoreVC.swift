@@ -59,6 +59,7 @@ class ProfileScoreVC: UIViewController {
     @objc func menuButtonTapped() {
         guard let splitViewController = splitViewController else { return }
         SplitViewControllerUtility.toggleMasterView(for: splitViewController)
+        AudioServicesPlaySystemSound(SystemSoundID(1105))
     }
     
     @IBAction func onUserType(_ sender: Any) {
@@ -72,6 +73,7 @@ class ProfileScoreVC: UIViewController {
             self.caseTypeTxt.text = locationKey
         }
         self.present(self.globalPicker, animated: true, completion: nil)
+        
         
     }
     
@@ -111,6 +113,12 @@ extension ProfileScoreVC {
         
         if ssnTxt.text?.isEmpty ?? true {
             showAlertView(message: "Please enter SSN")
+            return false
+        }
+        
+        if(self.ssnTxt.text!.count < 10  ) {
+            
+             showAlerOnTop(message: "SSN length shoud be 10 digits")
             return false
         }
         

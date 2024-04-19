@@ -1,7 +1,5 @@
 import UIKit
 
- 
-
 extension UIView {
     
     func dropShadow(scale: Bool = true , height:Int = 3 , shadowRadius:CGFloat = 3,radius:CGFloat = 0) {
@@ -38,7 +36,6 @@ func showAlertView(message:String){
    DispatchQueue.main.async {
    let alert = UIAlertController(title: "Message", message: message, preferredStyle: .alert)
    let action = UIAlertAction(title: "Ok", style: .default) { (alert) in
-      // completion?(true)
    }
    alert.addAction(action)
    UIApplication.topViewController()!.present(alert, animated: true, completion: nil)
@@ -56,14 +53,6 @@ func showGlobalOkeyAlert(message:String,completion:@escaping () -> Void){
    }
   
 }
-
-
-
-
- 
-
- 
-
 
 
 extension String {

@@ -9,8 +9,9 @@ struct UserRegistrationModel {
     var password: String?
     var userType: String?
     var barId: String?
+    var billingAddress: String?
 
-    init(name: String?, email: String?, dob: String?, phone: String?, password: String?, userType: String?, barId: String?) {
+    init(name: String?, email: String?, dob: String?, phone: String?, password: String?, userType: String?, barId: String?, billingAddress: String?) {
         self.name = name
         self.email = email
         self.dob = dob
@@ -18,6 +19,7 @@ struct UserRegistrationModel {
         self.password = password
         self.userType = userType
         self.barId = barId
+        self.billingAddress = billingAddress
     }
 }
 

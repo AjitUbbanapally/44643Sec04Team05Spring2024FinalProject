@@ -1,5 +1,6 @@
 
 import UIKit
+import AVFoundation
 
 class MatterListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
@@ -24,6 +25,7 @@ class MatterListVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     @objc func menuButtonTapped() {
         guard let splitViewController = splitViewController else { return }
         SplitViewControllerUtility.toggleMasterView(for: splitViewController)
+        AudioServicesPlaySystemSound(SystemSoundID(1105))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -74,5 +76,32 @@ extension MatterListVC {
         self.navigationController?.pushViewController(vc, animated: true)
 
     }
-
+    
 }
+
+extension MatterListVC {
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+            // Create a swipe action for deletion
+            let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (action, view, completionHandler) in
+                let caseDetail = self.caseData[indexPath.row]
+                
+                // Delete the case detail from Firestore
+                FireStoreManager.shared.deleteCaseDetail(caseDetail) { success in
+                    if success {
+                        self.caseData.remove(at: indexPath.row)
+                        
+                        tableView.deleteRows(at: [indexPath], with: .automatic)
+                        
+                        completionHandler(true)
+                    } else {
+                        print("Error deleting case detail from Firestore")
+                        completionHandler(false)
+                    }
+                }
+            }
+            
+            let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
+            return configuration
+        }
+}
+

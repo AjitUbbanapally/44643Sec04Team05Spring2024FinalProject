@@ -6,7 +6,6 @@ extension UIColor {
     }
     
     convenience init(hex: String, alpha: CGFloat = 1.0) {
-        // Remove any leading "#" character if present
         var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
         hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
         

@@ -14,7 +14,6 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         rememberMeButton.setImage(UIImage(named: "check"), for: .selected)
         rememberMeButton.setImage(UIImage(named: "uncheck"), for: .normal)
-        
         rememberMeButton.isSelected = rememberMe
         
     }
@@ -31,7 +30,6 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func onLogin(_ sender: Any) {
-        AudioServicesPlaySystemSound(SystemSoundID(1103))
         if(email.text!.isEmpty) {
             showAlerOnTop(message: "Please enter your email id.")
             return
@@ -49,13 +47,14 @@ class LoginVC: UIViewController {
                 
             }
         }
+        AudioServicesPlaySystemSound(SystemSoundID(1103))
     }
     
     @IBAction func onSignUp(_ sender: Any) {
-        AudioServicesPlaySystemSound(SystemSoundID(1103))
         let vc = self.storyboard?.instantiateViewController(withIdentifier:  "SignUpVC" ) as! SignUpVC
         
         self.navigationController?.pushViewController(vc, animated: true)
+        AudioServicesPlaySystemSound(SystemSoundID(1103))
     }
     
     @IBAction func onForgotPassword(_ sender: Any) {

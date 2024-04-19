@@ -1,6 +1,6 @@
 
-
 import UIKit
+import AVFoundation
 
 class ForgotPasswordVC: UIViewController {
     @IBOutlet weak var email: UITextField!
@@ -20,6 +20,7 @@ class ForgotPasswordVC: UIViewController {
                 print(password)
             }
         }
+        AudioServicesPlayAlertSound(SystemSoundID(1001))
     }
 
 

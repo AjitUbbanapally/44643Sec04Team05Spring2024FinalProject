@@ -3,7 +3,6 @@ import UIKit
 
 extension String {
     
-    
     func emailIsCorrect() -> Bool {
         let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
         let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
@@ -39,7 +38,6 @@ func showAlerOnTop(message:String){
    DispatchQueue.main.async {
    let alert = UIAlertController(title: "Message", message: message, preferredStyle: .alert)
    let action = UIAlertAction(title: "Ok", style: .default) { (alert) in
-      // completion?(true)
    }
    alert.addAction(action)
    UIApplication.topViewController()!.present(alert, animated: true, completion: nil)
@@ -83,10 +81,6 @@ extension UIApplication {
         return controller
     }
 }
-
-
-
-
 
 extension UITableView {
     

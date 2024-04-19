@@ -1,5 +1,6 @@
 
 import UIKit
+import AVFoundation
 
 class CreateMatterVC: UIViewController, UITextViewDelegate {
     @IBOutlet weak var dateOfIncidentTxt: UITextField!
@@ -51,6 +52,7 @@ class CreateMatterVC: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func clickOnMatter(_ sender: Any) {
+        AudioServicesPlaySystemSound(SystemSoundID(1103))
         if validateFields() {
             let caseDetails = CaseDetails(
                 dateOfIncident: dateOfIncidentTxt.text ?? "",
@@ -156,6 +158,13 @@ extension CreateMatterVC {
             datePicker.preferredDatePickerStyle = .wheels
         } else {
         }
+        
+        // Set maximum date to allow selection of future dates
+        datePicker.minimumDate = Calendar.current.date(byAdding: .year, value: -100, to: Date())
+               
+        // Set maximum date to allow selection of future dates
+        datePicker.maximumDate = Calendar.current.date(byAdding: .year, value: 100, to: Date())
+        
         let toolbar = UIToolbar();
         toolbar.sizeToFit()
         
@@ -173,6 +182,9 @@ extension CreateMatterVC {
         statuteOfLimitationsDateTxt.inputView = datePicker
         
     }
+    @objc func cancelDatePicker() {
+        self.view.endEditing(true)
+    }
     
     @objc func doneHolydatePicker() {
         let formatter = DateFormatter()
@@ -187,9 +199,7 @@ extension CreateMatterVC {
         self.view.endEditing(true)
     }
     
-    @objc func cancelDatePicker() {
-        self.view.endEditing(true)
-    }
+    
     
 }
 

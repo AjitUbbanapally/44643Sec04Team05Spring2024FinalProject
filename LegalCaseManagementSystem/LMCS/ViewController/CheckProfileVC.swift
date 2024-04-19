@@ -20,6 +20,7 @@ class CheckScoreProfileVC: FormViewController {
         super.viewDidLoad()
         self.profileScoreRecord()
     }
+    
     func profileScoreRecord() {
         form +++
         LabelRow () {
@@ -36,7 +37,7 @@ class CheckScoreProfileVC: FormViewController {
         <<< SegmentedRow<String>() {
             $0.title = "Gender"
             $0.options = ["Male", "Female"]
-            $0.value = "Male" // Set default value to Male
+            $0.value = "Male"
         }.onChange { [weak self] row in
             self?.genderRecord = row.value ?? ""
         }
@@ -138,8 +139,6 @@ class CheckScoreProfileVC: FormViewController {
         }
     }
 
-
-
     func resetprofileScoreRecord(){
         self.genderRecord = ""
         self.ageRecord = 0
@@ -179,18 +178,12 @@ class CheckScoreProfileVC: FormViewController {
         
       print(incomeLevelRecord)
         
-        
         let lmcs = try! LeagalApp(configuration: MLModelConfiguration())
 
-        
-    
         let prediction = try? lmcs.prediction(Age: Int64(ageRecord), Gender: genderRecord, Education_Level: educationLevelRecord, Employment_Status: employmentStatusRecord, Income_Level: Int64(incomeLevelRecord), Criminal_Record: crimanlRecord, Case_History: Int64(caseHistoryRecord), Legal_Knowledge: Int64(legalKnowledgeRecord), Communication_Skills: Int64(communicationSkillsRecord), Legal_Representation: legalRepresentation)
         
-        
          let score = prediction?.Profile_Score
-        
          profilePredicationAlert(with: "\(score!)")
-         
          AudioServicesPlaySystemSound(1152)
     }
 

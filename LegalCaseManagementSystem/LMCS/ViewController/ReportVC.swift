@@ -1,5 +1,6 @@
 import UIKit
 import DGCharts
+import AVFoundation
 
 class ReportVC: UIViewController {
     
@@ -22,17 +23,17 @@ class ReportVC: UIViewController {
             self.showChart()
         }
         
-        FireStoreManager.shared.fetchCaseDetails(completion:{ cases in
-            self.numberOfPartyRegistered = cases.count
+        FireStoreManager.shared.fetchCaseDetails { cases in
+            self.numberOfCasesTaken = cases.count
             self.showChart()
-        })
+        }
     }
     
     func showChart() {
         // Pie Chart
         let pieEntries = [
             PieChartDataEntry(value: Double(numberOfPartyRegistered), label: "Party Added"),
-            PieChartDataEntry(value: Double(numberOfCasesTaken), label: "Cases ")
+            PieChartDataEntry(value: Double(numberOfCasesTaken), label: "Cases")
         ]
         let pieChartDataSet = PieChartDataSet(entries: pieEntries)
         let pieChartData = PieChartData(dataSet: pieChartDataSet)
@@ -66,5 +67,6 @@ class ReportVC: UIViewController {
     @objc func menuButtonTapped() {
         guard let splitViewController = splitViewController else { return }
         SplitViewControllerUtility.toggleMasterView(for: splitViewController)
+        AudioServicesPlaySystemSound(SystemSoundID(1105))
     }
 }

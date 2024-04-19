@@ -1,7 +1,9 @@
 
 import UIKit
+import AVFoundation
 
 class SignUpVC: UIViewController {
+    
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var dob: UITextField!
@@ -28,7 +30,7 @@ class SignUpVC: UIViewController {
     @IBAction func onSignUp(_ sender: Any) {
         if validate() {
 
-            let userData = UserRegistrationModel(name: self.name.text?.lowercased() ?? "", email: self.email.text ?? "", dob: self.dob.text ?? "", phone: self.phone.text ?? "", password: self.password.text ?? "",userType: self.userType.text ?? "", barId: self.barId.text ?? "")
+            let userData = UserRegistrationModel(name: self.name.text?.lowercased() ?? "", email: self.email.text ?? "", dob: self.dob.text ?? "", phone: self.phone.text ?? "", password: self.password.text ?? "",userType: self.userType.text ?? "", barId: self.barId.text ?? "", billingAddress: "")
             
             FireStoreManager.shared.signUp(user: userData) { success in
                 if success{
@@ -40,6 +42,7 @@ class SignUpVC: UIViewController {
     }
 
     @IBAction func onUserType(_ sender: Any) {
+        AudioServicesPlaySystemSound(SystemSoundID(1104))
                     
         var locationKey = ""
         self.globalPicker.stringArray = self.userTypeArr
@@ -73,12 +76,12 @@ class SignUpVC: UIViewController {
         
 
         if(self.phone.text!.isEmpty) {
-             showAlerOnTop(message: "Please enter phone.")
+             showAlerOnTop(message: "Please enter phone number")
             return false
         }
         
         if(self.dob.text!.isEmpty) {
-            showAlerOnTop(message: "Please enter dob.")
+            showAlerOnTop(message: "Please enter Date of Birth.")
            return false
        }
               
@@ -97,9 +100,9 @@ class SignUpVC: UIViewController {
             return false
         }
         
-        if(self.password.text!.count < 5 || self.password.text!.count > 10 ) {
+        if(self.password.text!.count < 6 || self.password.text!.count > 10 ) {
             
-             showAlerOnTop(message: "Password  length shoud be 5 to 10")
+             showAlerOnTop(message: "Password length shoud be between 6 to 10 characters")
             return false
         }
         

@@ -38,12 +38,11 @@ class FireStoreManager {
                
                // Signup
                
-               let data = ["name":user.name ?? "","dob":user.name ?? "","email":user.email ?? "","password":user.password ?? "","phone":user.phone ?? "","userType":user.userType ?? "","barId":user.barId ?? ""] as [String : Any]
+               let data = ["name":user.name ?? "","dob":user.dob ?? "","email":user.email ?? "","password":user.password ?? "","phone":user.phone ?? "","userType":user.userType ?? "","barId":user.barId ?? "","billingAddress": user.billingAddress ?? ""] as [String : Any]
                
                self.addDataToFireStore(data: data) { _ in
                    
-                 
-                   showOkAlertAnyWhereWithCallBack(message: "Registration Success!!") {
+                   showOkAlertAnyWhereWithCallBack(message: "Registration Successful!!") {
                         
                        DispatchQueue.main.async {
                            completion(true)
@@ -59,6 +58,7 @@ class FireStoreManager {
    
    
    func login(email:String,password:String,completion: @escaping (Bool)->()) {
+       
        let  query = db.collection("Users").whereField("email", isEqualTo: email)
        
        query.getDocuments { (querySnapshot, err) in
@@ -243,6 +243,46 @@ class FireStoreManager {
             }
         }
 
+    func deleteCaseDetail(_ caseDetail: CaseDetails, completion: @escaping (Bool) -> Void) {
+        let query = db.collection("CaseMatter").whereField("matterId", isEqualTo: caseDetail.matterId)
+        
+        query.getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print("Error querying case detail from Firestore: \(error.localizedDescription)")
+                completion(false)
+            } else {
+                guard let documents = querySnapshot?.documents, !documents.isEmpty else {
+                    print("No documents found with the specified matterId.")
+                    completion(false)
+                    return
+                }
+                
+                var deleteSuccess = true
+                
+                let dispatchGroup = DispatchGroup()
+                
+                for document in documents {
+                    dispatchGroup.enter()
+                    
+                    document.reference.delete { error in
+                        if let error = error {
+                            print("Error deleting document from Firestore: \(error.localizedDescription)")
+                            deleteSuccess = false
+                        }
+                        
+                        dispatchGroup.leave()
+                    }
+                }
+                
+                // Wait for all deletions to complete
+                dispatchGroup.notify(queue: .main) {
+                    completion(deleteSuccess)
+                }
+            }
+        }
+    }
+
+    
     func fetchPartyDetails(completion: @escaping ([PartyDetails]) -> Void) {
         let casesRef = db.collection("PartyList")
 
@@ -316,7 +356,7 @@ class FireStoreManager {
     func updateProfile(documentid:String, user: UserRegistrationModel ,completion: @escaping (Bool)->()) {
         let  query = db.collection("Users").document(documentid)
         
-        let userData = ["name":user.name ?? "","dob":user.name ?? "","email":user.email ?? "","password":user.password ?? "","phone":user.phone ?? "","userType":user.userType ?? "","barId":user.barId ?? ""] as [String : Any]
+        let userData = ["name":user.name ?? "","dob":user.dob ?? "","email":user.email ?? "","password":user.password ?? "","phone":user.phone ?? "","userType":user.userType ?? "","barId":user.barId ?? "", "billingAddress": user.billingAddress] as [String : Any]
 
         query.updateData(userData) { error in
             if let error = error {

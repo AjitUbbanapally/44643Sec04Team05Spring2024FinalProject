@@ -1,6 +1,6 @@
 
-
 import UIKit
+import AVFoundation
 
 class PartyVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
@@ -23,6 +23,7 @@ class PartyVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @objc func menuButtonTapped() {
         guard let splitViewController = splitViewController else { return }
         SplitViewControllerUtility.toggleMasterView(for: splitViewController)
+        AudioServicesPlaySystemSound(SystemSoundID(1105))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,7 +43,6 @@ class PartyVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
 }
-
 
 extension PartyVC {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -65,6 +65,5 @@ extension PartyVC {
         let vc = self.storyboard?.instantiateViewController(withIdentifier:  "PartyDetailVC" ) as! PartyDetailVC
         vc.partyData = data
         self.navigationController?.pushViewController(vc, animated: true)
-
     }
 }
