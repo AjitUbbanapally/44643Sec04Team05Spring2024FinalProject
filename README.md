@@ -62,6 +62,8 @@ The Navigation among different screens is as follows :
 
 ### UI/Prototype
 ![UI](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/632dbdad-99e9-4b6b-94df-1a6ec28aae6e)
+![UI](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/0ab363bb-7c37-4814-bff0-b2f376275c56)
+
 
 ### Screen1--LOGIN SCREEN
 
