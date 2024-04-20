@@ -1,6 +1,32 @@
 ## 44643Sec04Team05Spring2024FinalProject
 # Legal Case Management System - One stop solution with all Workflows and process design
-Its an Enterprise Resource Software to manage the entire lifecycle of Legal cases. 
+Its an Enterprise Resource Software to manage the entire lifecycle of Legal cases.
+
+With the escalating number of judicial cases, efficient management of legal proceedings has become a paramount concern for legal professionals and firms. The Legal Case Management System (LCMS) presents a novel solution tailored to address these challenges. LCMS is a mobile application designed to streamline case management processes while ensuring robust levels of authorization and authentication. Targeting legal experts, paralegals, and technical admin teams across diverse law firms, LCMS offers a comprehensive mechanism to track cases from initiation to closure, integrating advanced machine learning algorithms to predict case acceptance probabilities based on client profile scores. Furthermore, LCMS incorporates intuitive data visualization tools to provide insightful representations of case metrics, facilitating informed decision-making and resource optimization. Embracing the principles of efficiency, productivity, and resource optimization, LCMS heralds a new era in legal case management, empowering professionals to navigate the complexities of the legal landscape with ease.
+
+## features of the project 
+### Party Information
+Display basic and detailed client      information, including case type (defendant or plaintiff), ensuring clarity from the outset.
+
+### CRM Integration
+Seamlessly access all client contacts and leads in one centralized platform. Track leads through each stage of the pipeline for enhanced client management.
+
+### Communications and Document Management
+Stay organized with integrated communication tools and efficient document management. From emails to case reports, manage every detail effortlessly.
+
+### User Authentication
+Ensure security with a robust login page for authorized users. New legal experts can easily sign up for access, streamlining onboarding processes.
+
+### Firebase Integration
+Safely host user and client information on Firebase, ensuring data security and accessibility.
+
+### Matter Portfolio
+Gain insights into assigned courts and statute of limitations dates to determine case applicability. Easily generate, edit, and securely access documents for ### streamlined case management.
+
+### Reporting and Analytics
+Utilize data visualization for comprehensive reporting and analytics. Gain a pictorial representation of matters taken up, total parties created, and drill down into further details such as attorney fees, and new intakes, facilitating informed decision-making and strategic planning.
+
+
 
 ## Project Work Breakdown Structure(WBS)
 
@@ -97,10 +123,6 @@ The Navigation among different screens is as follows :
 	- Search button 
 	- Filter Button 
 	- Back/Reset button.
-
-- This screen consists of search button where we can search different cases and filter by using type, case type. It consists of vertical and horizontal scrolling.
-
-
 
 ### Screen4 -- LIST VIEW BASED ON SPECIFIC MATTER (CASE)
 ![screen4](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/0fda3a56-32e3-41c3-8c5c-f04f0b3e86f4)
