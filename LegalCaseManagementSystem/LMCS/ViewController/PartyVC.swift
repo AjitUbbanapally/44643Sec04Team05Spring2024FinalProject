@@ -54,7 +54,7 @@ extension PartyVC {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PartyTableViewCell
         
-        cell.setData(numberOfConvictedFeloniesTxt: String(partyData.numberOfConvictedFelonies), phoneTxt: partyData.userPhone, partyNameTxt: partyData.partyName, emailTxt: partyData.userEmail)
+        cell.setData(numberOfConvictedFeloniesTxt: String(partyData.numberOfConvictedFelonies), partyNameTxt: partyData.partyName, emailTxt: partyData.userEmail)
         
         
         return cell

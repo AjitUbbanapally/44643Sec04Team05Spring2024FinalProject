@@ -11,10 +11,10 @@ class PartyTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
 
-    func setData(numberOfConvictedFeloniesTxt:String,phoneTxt:String,partyNameTxt:String,emailTxt:String)  {
+    func setData(numberOfConvictedFeloniesTxt:String,partyNameTxt:String,emailTxt:String)  {
         
         self.numberOfConvictedFeloniesTxt.text = numberOfConvictedFeloniesTxt
-        self.phoneTxt.text = phoneTxt
+        //self.phoneTxt.text = phoneTxt
         self.partyNameTxt.text = partyNameTxt
         self.emailTxt.text = emailTxt
     }
