@@ -130,7 +130,9 @@ From successful login, the user will be directed to a new screen. It is a split 
 - It has Name, DOB, Bar Id, Phone Number,User type. These 4 must be fetched from the user database. Along with this, the user must have a logout button. Upon successful logout the page must be navigated to the basic login page.- 
 
 ### Screen4 -- Check Profile Score Page
-![screen4](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/0fda3a56-32e3-41c3-8c5c-f04f0b3e86f4)
+![ProfileScore](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/3302850f-f33d-4944-945d-21f50d49adff)
+
+![ProfileScorewithoutPredictionScore](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/2e2f52aa-20f4-449f-862a-47aa2612f207)
 
 - This section is accessible within the split view upon selecting "Profile Score" on screen 2. It comprises the following text fields:
 
@@ -148,12 +150,13 @@ From successful login, the user will be directed to a new screen. It is a split 
 Check Profile Score button should run an ML model in background using CoreML and give a percentage of acceptance as a pop Up alert. We need to click Ok. When clicked on Create Party button, all the data entered should be stored in firebase in party database.
 
 ### Screen5 -- Party Overview
-![screen5](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/6c55dfed-301c-44f5-8e32-13a4eb149e2c)
+![Partyview](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/5aa610bb-dd54-4d01-bc40-0f340398596f)
+
 - Party View is a table view in split view with 5 columns Name, Alias, DoB, Phone and Email. It should fetch all the records from the firebase party database. It should have an Search bar above it to search for party based on name. Name should be clickable, and it should redirect to Screen 6.
 
 
 ### Screen 6 -- Party Detail Page
-![screen6](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/1ff139a1-c65f-45c7-8391-682afb37c214)
+![PartyDetail](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/5e45c0be-6c62-4b32-8a82-6e5c4ce0a8da)
 
 - It should have an scroll view of all the data of the party fetched from database and it should have 3 buttons at the top. The 3 buttons will be Edit, Delete and Create Matter.
 Edit button should make all the above text fields editable and saving the edit should make changes to firebase. Delete should delete the record. Create Matter should redirect to a new page.
@@ -162,7 +165,6 @@ Edit button should make all the above text fields editable and saving the edit s
 
 
 ### Screen7 --  Create Matter Page
-![Screen7](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/cd9daa26-2331-40a0-93f3-980b9d8eef0f)
 
 - It should have the details from party overview along with the below fields to be fillable.
 - Case Title ,Date of Incident, Case Type, Case description, Statute of Limitations date(the deadline for filing a lawsuit.), Matter Value ($), Attorney Fees.,Court Name, Matter Id(Alpha Numeric Id),.
@@ -172,15 +174,19 @@ The user should be able to able to click on save matter button which should save
 
 
 ### Screen8 --  Matter Overview
-![screen8](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/936dce05-5e3f-42e8-8de3-cd3ccf473c92)
+![MatterView](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/dff292a7-d3ec-4902-8f7f-9864dd366092)
 
 - Matter View is a table view in split view with 6 columns Matter Id, Case Title, Party Name, Case Type, Matter Value and Date of Incident. It should fetch all the records from the firebase matter database. It should have a Search bar above it to search for matter based on matter id. Case Title should be clickable, and it should redirect to Screen 9.
 
   ### Screen 9: Matter Detail Page:
+  ![MatterDetailView](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/54115f67-9d97-4802-831d-b4773b6cc7f0)
+
 This is specific matter page which is similar to party page where the whole particular matter details have to be fetched and it should have 2 buttons edit and delete similar to party Detail page. 
 
 
 ### Screen 10 : Dashboard page 
+![ReportsDashboard](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/4cffcea9-425a-4a86-9e58-06f745b33488)
+
 
 This should have below  visualizations:
 1. No of Matters this Month: Calculate the number of matters created this month from firebase and fill a pie chart based on case types.
