@@ -104,6 +104,8 @@ The Navigation among different screens is as follows :
 
 
 ### Screen2 -- DashBoard
+![HomeSplitView](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/18073369-47c5-470d-b653-a0d675ad3d8e)
+
 <img width="253" alt="image" src="https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/0126142c-220a-42f3-898b-d60e5d5fa098">
 
 
@@ -117,14 +119,10 @@ The Navigation among different screens is as follows :
 - This is just a user interface and doesn’t have any other functions involved in it.
   
 ### Screen3 -- PARTY/CLIENT INFORMATION SCREEN 
-![screen3](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/915e8c89-662c-4b81-9ad3-c5881d7ac8bb)
+![Partyview](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/13c77e7b-f5a6-468e-87f8-8b9cd50febbf)
 
 - This is screen that is navigated by clicking on parties’ button from screen 2.
-- Buttons Pressed:
-	- LCMS – Directs to home page.
-	- Search button 
-	- Filter Button 
-	- Back/Reset button.
+- 
 
 ### Screen4 -- LIST VIEW BASED ON SPECIFIC MATTER (CASE)
 ![screen4](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/0fda3a56-32e3-41c3-8c5c-f04f0b3e86f4)
