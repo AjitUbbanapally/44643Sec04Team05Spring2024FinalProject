@@ -94,7 +94,7 @@ The Navigation among different screens is as follows :
 
 
 ![Screen1](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/ab831aaa-18e0-4bb4-a926-45a65c588086)
-Login Screen
+- Login Screen
 It has Username and Password as text views and Login button along with Remember me checkbox and Forgot Password page.
 When clicked on Login button, the username and password have to be authenticated with the firebase userid’s and passwords and login accordingly. The data table for this should contain fields: Name, username, DateOfBirth, Phone Number,User Type, Password, Email, Bar Id(Alphanumeric 10 digit code).
 Note:
@@ -113,7 +113,7 @@ User doesn’t get to create new users/ signin. This is done only by admin team 
 ![HomeSplitView](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/18073369-47c5-470d-b653-a0d675ad3d8e)
 
 <img width="253" alt="image" src="https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/0126142c-220a-42f3-898b-d60e5d5fa098">
-From successful login, the user will be directed to a new screen. It is a split view with 5 categories on the left side and Reports/Dashboards to be defaulted on the right screen.
+- From successful login, the user will be directed to a new screen. It is a split view with 5 categories on the left side and Reports/Dashboards to be defaulted on the right screen.
 
 - Its a split view consisting of
   - Parties
@@ -165,6 +165,9 @@ Edit button should make all the above text fields editable and saving the edit s
 
 
 ### Screen7 --  Create Matter Page
+![image](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/42fd77b7-c17d-4228-ab57-27c73d4903ff)
+
+
 
 - It should have the details from party overview along with the below fields to be fillable.
 - Case Title ,Date of Incident, Case Type, Case description, Statute of Limitations date(the deadline for filing a lawsuit.), Matter Value ($), Attorney Fees.,Court Name, Matter Id(Alpha Numeric Id),.
