@@ -104,14 +104,16 @@ The Navigation among different screens is as follows :
 
 
 ### Screen2 -- DashBoard
-![screen2](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/9d2c9910-817d-463d-a608-d698d463a76d)
+<img width="253" alt="image" src="https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/0126142c-220a-42f3-898b-d60e5d5fa098">
 
-- Buttons Pressed:
+
+- Its a split view consisting of
   - Parties
   - Matter
   - Report
   - Profile Score
-- Each of 4 buttons - Parties, Matter, Report, and Profile Score will navigate to 4 different screens.
+  - Settings
+- Each of 5 buttons - Parties, Matter, Report, and Profile Score,Settings will navigate to 4 different screens.
 - This is just a user interface and doesn’t have any other functions involved in it.
   
 ### Screen3 -- PARTY/CLIENT INFORMATION SCREEN 
