@@ -26,6 +26,8 @@ Gain insights into assigned courts and statute of limitations dates to determine
 ### Reporting and Analytics
 Utilize data visualization for comprehensive reporting and analytics. Gain a pictorial representation of matters taken up, total parties created, and drill down into further details such as attorney fees, and new intakes, facilitating informed decision-making and strategic planning.
 
+### Map kit  - functionality used to tag the location of the user.
+
 
 
 ## Project Work Breakdown Structure(WBS)
@@ -165,7 +167,7 @@ Edit button should make all the above text fields editable and saving the edit s
 
 
 ### Screen7 --  Create Matter Page
-![image](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/42fd77b7-c17d-4228-ab57-27c73d4903ff)
+<img width="283" alt="CreateMatter" src="https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/d97fca64-549e-4c09-af18-8c561a608e16">
 
 
 
