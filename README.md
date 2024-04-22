@@ -94,6 +94,12 @@ The Navigation among different screens is as follows :
 
 
 ![Screen1](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/ab831aaa-18e0-4bb4-a926-45a65c588086)
+Login Screen
+It has Username and Password as text views and Login button along with Remember me checkbox and Forgot Password page.
+When clicked on Login button, the username and password have to be authenticated with the firebase userid’s and passwords and login accordingly. The data table for this should contain fields: Name, username, DateOfBirth, Phone Number,User Type, Password, Email, Bar Id(Alphanumeric 10 digit code).
+Note:
+User doesn’t get to create new users/ signin. This is done only by admin team directly in backend in firebase.
+
 - Buttons pressed:
   -	Login button 
   - Remember me button. 
@@ -107,7 +113,7 @@ The Navigation among different screens is as follows :
 ![HomeSplitView](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/18073369-47c5-470d-b653-a0d675ad3d8e)
 
 <img width="253" alt="image" src="https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/0126142c-220a-42f3-898b-d60e5d5fa098">
-
+From successful login, the user will be directed to a new screen. It is a split view with 5 categories on the left side and Reports/Dashboards to be defaulted on the right screen.
 
 - Its a split view consisting of
   - Parties
@@ -116,56 +122,70 @@ The Navigation among different screens is as follows :
   - Profile Score
   - Settings
 - Each of 5 buttons - Parties, Matter, Report, and Profile Score,Settings will navigate to 4 different screens.
-- This is just a user interface and doesn’t have any other functions involved in it.
+
   
-### Screen3 -- PARTY/CLIENT INFORMATION SCREEN 
+### Screen3 -- Settings Page
 ![Partyview](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/13c77e7b-f5a6-468e-87f8-8b9cd50febbf)
 
-- This is screen that is navigated by clicking on parties’ button from screen 2.
-- 
+- It has Name, DOB, Bar Id, Phone Number,User type. These 4 must be fetched from the user database. Along with this, the user must have a logout button. Upon successful logout the page must be navigated to the basic login page.- 
 
-### Screen4 -- LIST VIEW BASED ON SPECIFIC MATTER (CASE)
+### Screen4 -- Check Profile Score Page
 ![screen4](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/0fda3a56-32e3-41c3-8c5c-f04f0b3e86f4)
 
-- Screen is displayed by clicking on matter button from screen 2 . The tabs include  Home tab, matters tab 
+- This section is accessible within the split view upon selecting "Profile Score" on screen 2. It comprises the following text fields:
 
-- It consists of different case details and matters  belonging to same type (Matter type can be chosen from Matters tab) eg. Intellectual Property. It gives information  whether cases are opened or closed.  
-We can click on Home button to go back to Dashboard screen (screen 2)
+•	Party Name
+•	Gender
+•	Date Of Birth
+•	SSN
+•	Nationality
+•	Case Type
+•	No of Convicted Felonies
+•	Defendant or Plaintiff
+•	Educational level of party
+•	Employment status
+- The fields when filled should make check profile score button and create as Party button active.
+Check Profile Score button should run an ML model in background using CoreML and give a percentage of acceptance as a pop Up alert. We need to click Ok. When clicked on Create Party button, all the data entered should be stored in firebase in party database.
 
-### Screen5 -- PARTY/CLIENT RELATED BASIC DETAILS
+### Screen5 -- Party Overview
 ![screen5](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/142938211/6c55dfed-301c-44f5-8e32-13a4eb149e2c)
-- By clicking on each party name from screen 3 it will be navigate towards this page and display the basic details of party or client. We can click on Home button to go back to Dashboard screen (screen 2)
-- Party Detail Page
-It should have an scroll view of all the data of the party fetched from database and it should have 3 buttons at the top. The 3 buttons will be Edit, Delete and Create Matter.
+- Party View is a table view in split view with 5 columns Name, Alias, DoB, Phone and Email. It should fetch all the records from the firebase party database. It should have an Search bar above it to search for party based on name. Name should be clickable, and it should redirect to Screen 6.
+
+
+### Screen 6 -- Party Detail Page
+![screen6](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/1ff139a1-c65f-45c7-8391-682afb37c214)
+
+- It should have an scroll view of all the data of the party fetched from database and it should have 3 buttons at the top. The 3 buttons will be Edit, Delete and Create Matter.
 Edit button should make all the above text fields editable and saving the edit should make changes to firebase. Delete should delete the record. Create Matter should redirect to a new page.
 
 
 
-### Screen 6 -- CLIENTS DETAILED CASE INFORMATION
-![screen6](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/1ff139a1-c65f-45c7-8391-682afb37c214)
 
-- There is an Advanced option , upon clicking on that the detailed case information of client is showcased.
-In landscape and portrait view entire information would be displayed with a provision for horizontal and vertical scrolling.
-
-
-
-### Screen7 --  VISUALIZATION SCREEN
+### Screen7 --  Create Matter Page
 ![Screen7](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/cd9daa26-2331-40a0-93f3-980b9d8eef0f)
 
-- When we click on Reports - we get some visualization analysis along with basic reports.
-- There are no buttons. Its just the some statistics related to profile of the user so that he can have track of his cases.
-- It gives information on total Matters/cases taken up and proportion of cases belonging to each case type.
-- Revenue generated
+- It should have the details from party overview along with the below fields to be fillable.
+- Case Title ,Date of Incident, Case Type, Case description, Statute of Limitations date(the deadline for filing a lawsuit.), Matter Value ($), Attorney Fees.,Court Name, Matter Id(Alpha Numeric Id),.
+The user should be able to able to click on save matter button which should save this record to firebase matter database. After clicking on save matter button we will be redirected to screen 9
 
 
 
-### Screen8 --  profile score check
+
+### Screen8 --  Matter Overview
 ![screen8](https://github.com/AjitUbbanapally/44643Sec04Team05Spring2024FinalProject/assets/143151335/936dce05-5e3f-42e8-8de3-cd3ccf473c92)
 
-- Buttons: 
-  - There will be one “check score” button.
-- There will some sample questionnaire to enter in order to know the profile score. We need to fill in all the details like Age, DOB, Case type, felonies etc and click on “Check Score” button to check the score.  it will compute the score based on the Machine learning analysis.
+- Matter View is a table view in split view with 6 columns Matter Id, Case Title, Party Name, Case Type, Matter Value and Date of Incident. It should fetch all the records from the firebase matter database. It should have a Search bar above it to search for matter based on matter id. Case Title should be clickable, and it should redirect to Screen 9.
 
+  ### Screen 9: Matter Detail Page:
+This is specific matter page which is similar to party page where the whole particular matter details have to be fetched and it should have 2 buttons edit and delete similar to party Detail page. 
+
+
+### Screen 10 : Dashboard page 
+
+This should have below  visualizations:
+1. No of Matters this Month: Calculate the number of matters created this month from firebase and fill a pie chart based on case types.
+2. Intakes this Month:
+Calculate the number of parties created and subtract the number of matters and fetch the data in number format here.
 
 ## User Interface Design configuration
 
@@ -202,7 +222,7 @@ In landscape and portrait view entire information would be displayed with a prov
 - Reset page is part of the UI Navigation View
 
 ### Eureka framework
-- added some components from Eureka Pachkage into Matter view page
+- added some components from Eureka Pachkage into Profile score view page
 
 ### configured calender 
 - The user can enter ones Date of birth using a scroll through option
